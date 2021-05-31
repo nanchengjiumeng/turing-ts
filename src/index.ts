@@ -74,7 +74,7 @@ export class Turing {
    */
   Window_GetSize(iHwnd: hwnd = 0): WindowSize {
     const winSize: string = this.turing.Window_GetSize(iHwnd)
-    const [left, top, right, bottom] = winSize.split(',').map(s => Number(s))
+    const [left, top, right, bottom] = winSize.split(',').map(Number)
     return {
       left,
       top,
@@ -140,7 +140,7 @@ export class Turing {
    * @returns 字符串型，所有顶层窗口句柄(格式：句柄|句柄|…)
    */
   Window_EnumChild(iHwnd: hwnd = 0, iClass: string = "", iTitle: string = ""): Array<hwnd> {
-    return this.turing.Window_EnumChild(iHwnd, iClass, iTitle).split(',').map((s: string) => Number(s));
+    return this.turing.Window_EnumChild(iHwnd, iClass, iTitle).split(',').map(Number);
   }
 
   /**
@@ -710,8 +710,123 @@ export class Turing {
     this.turing.Filter_DarkColor()
   }
 
-  // 步骤三
+  // 步骤三 字符切割
+  /**
+   * 固定位置字符切割
+   * @param qx qx：整数型，起点X坐标
+   * @param qy qy：整数型，起点Y坐标
+   * @param width width：整数型，字符宽度
+   * @param height height：整数型，字符高度
+   * @param Column Column：整数型，可选，列字间距，默认0
+   * @param cNum cNum：整数型，可选，列字符数量，默认1
+   * @param Row Row：整数型，可选，行字间距，默认0
+   * @param rNum rNum：整数型，可选，行字符数量，默认1
+   * @returns CharNum：整数型，字符切割数量(最大下标值)
+   */
+  Incise_FixedLocation(qx: number, qy: number, width: number, height: number, Column: number = 0, cNum: number = 0, Row: number = 0, rNum: number = 1): number {
+    return this.turing.Incise_FixedLocation(qx, qy, width, height, Column, cNum, Row, rNum)
+  }
+  /**
+   * 随机方位字符切割
+   * @param through 整数型，可选，穿透点数（默认0，指定点数：为大于点数时能够穿透切割）
+   * @param Width 字符串型，可选，保留字符切割宽度范围（例："50-150"）。
+   * @param Height 字符串型，可选，保留字符切割高度范围（例："30-100"）。
+   * @returns CharNum：整数型，字符切割数量(最大下标值)
+   */
+  Incise_RandomOrientation(through: number, Width: number, Height: number): number {
+    return this.turing.Incise_RandomOrientation(through, Width, Height)
+  }
+  /**
+   * 连通区域字符切割
+   * @param through 布尔型，是否八通方向（八向：True）
+   * @param Width 字符串型，可选，保留字符切割宽度范围（例："50-150"）。
+   * @param Height 字符串型，可选，保留字符切割高度范围（例："30-100"）。
+   * @returns 整数型，字符切割数量(最大下标值)
+   */
+  Incise_ConnectedArea(through: boolean, Width: string, Height: string): number {
+    if (Height) {
+      return this.turing.Incise_ConnectedArea(through, Width, Height)
+    } else if (Width) {
+      return this.turing.Incise_ConnectedArea(through, Width)
+    } else {
+      return this.turing.Incise_ConnectedArea(through)
+    }
+  }
+  /**
+   * 范围投影字符切割
+   * @param Row   Row：整数型，行间隙（横向，最小值）
+   * @param Column Column：整数型，列间隙（纵向，最小值）
+   * @param Width Width：字符串型，可选，保留字符切割宽度范围（例："50-150"）。
+   * @param Height Height：字符串型，可选，保留字符切割高度范围（例："30-100"）。
+   * @param Flag Flag：整数型，可选，排序规则（默认0书写顺序，1从左到右，2换行功能）
+   * @returns 整数型，字符切割数量(最大下标值)
+   */
+  Incise_ScopeAisle(Row: number, Column: number, Width: string, Height: string, Flag: number): number {
+    if (Flag) {
+      return this.turing.Incise_ScopeAisle(Row, Column, Width, Height, Flag)
+    } else if (Height) {
+      return this.turing.Incise_ScopeAisle(Row, Column, Width, Height)
+    } else if (Width) {
+      return this.turing.Incise_ScopeAisle(Row, Column, Width)
+    } else {
+      return this.turing.Incise_ScopeAisle(Row, Column)
+    }
+  }
+  /**
+   * 颜色分层字符切割（体验版--组合式）
+   * @param interval nterval：整数型，颜色值之间的距离
+   * @param num num：整数型，过滤掉点数的数量
+   * @param Width Width：字符串型，可选，保留字符切割宽度范围（例："50-150"）
+   * @param Height Height：字符串型，可选，保留字符切割高度范围（例："30-100"）
+   * @param Value value：整数型，可选，点数阈值（默认6，范围：1~8）
+   * @param Row Row：整数型，可选，行间距（默认3）
+   * @param Column Column：整数型，可选，列间距（默认2）
+   * @returns CharNum：整数型，字符切割数量(最大下标值)
+   */
+  Incise_ColorLayered(interval: number, num: number, Width: string, Height: string, Value: number, Row: number, Column: number): number {
+    if (Column) {
+      return this.turing.Incise_ColorLayered(interval, num, Width, Height, Value, Row, Column)
+
+    } else if (Row) {
+      return this.turing.Incise_ColorLayered(interval, num, Width, Height, Value, Row)
+
+    } else if (Value) {
+      return this.turing.Incise_ColorLayered(interval, num, Width, Height, Value)
+
+    } else if (Height) {
+      return this.turing.Incise_ColorLayered(interval, num, Width, Height)
+
+    } else if (Width) {
+      return this.turing.Incise_ColorLayered(interval, num, Width)
+
+    } else {
+      return this.turing.Incise_ColorLayered(interval, num)
+
+    }
+  }
+  /**
+   * 自适应矩形字符切割（体验版）
+   * @param Width Width：字符串型，可选，保留字符切割宽度范围（例："50-150"）
+   * @param Height Height：字符串型，可选，保留字符切割高度范围（例："30-100"）
+   * @returns CharNum：整数型，字符切割数量
+   */
+  Incise_Adaptive(Width: string, Height: string): number {
+    return this.turing.Incise_Adaptive(Width, Height)
+  }
+  /**
+   * 
+   * @param index index：整数型，切割字符索引号
+   * @returns 
+   */
+  Incise_Preview(index: number): Postion {
+    const [x, y] = this.turing.Incise_Preview(index).split(',').map(Number)
+    return {
+      x,
+      y
+    }
+  }
   // 步骤四
+
   // 步骤五
 
   /** 文字识别 END */
