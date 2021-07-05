@@ -1,0 +1,8 @@
+把“TURING.dll”插件放在“c:\TURING\”目录中，再手动运行一下“注册图灵插件到系统.bat”文件来注册一下插件。
+
+【注意】【注意】【注意】：Win10系统，请右键“管理员身份打开”运行“注册图灵插件到系统.bat”文件。
+
+可以运行脚本输出版本号进行确认：
+
+Set TURING = CreateObject("TURING.FISR")
+TracePrint TURING.Version()

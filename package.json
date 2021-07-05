@@ -1,11 +1,24 @@
 {
   "name": "ts-turing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "3.1.0",
+  "description": "Use turing.dll in javascript",
+  "keywords": [
+    "turing",
+    "dll",
+    "com",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/types/index.d.ts",
   "scripts": {
+    "watch": "tsc --watch",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "@types/node": "^16.0.0"
+  },
+  "author": "王羽彪 <1443837536@qq.com>",
+  "license": "ISC",
+  "repository": "https://github.com/nanchengjiumeng/turing-ts.git"
 }
