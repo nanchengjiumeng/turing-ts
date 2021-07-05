@@ -1,11 +1,20 @@
 declare type Version = string;
+/**
+ * 字符串型，可选，关联模式。
+	 默认：普通窗口后台"normal"，
+	 普通前台窗口"window"，
+	 3D游戏窗口后台"gdi"(切换主题为Aero再试)，
+	 Aero主题缩略图后台"aero"，
+	后台键鼠模式"km"。
+*/
 declare type mode = 'normal' | 'window' | 'gdi' | 'aero' | 'km';
-declare type WindowSize = string;
-declare type Position = string;
-declare type ImageDataStirng = string;
-declare type ImageSize = string;
-declare type hwnd = number;
-
+declare type WindowSize = string; // 左,上,右,下
+declare type Position = string; // x,y
+declare type ImageDataString = string; // 宽|高|图像数据(b,g,r,a,b,g,r,a,…)
+declare type ImageSize = string; // 宽,高
+declare type hwnd = number; // 整数型，窗口句柄(窗口不能最小化)
+declare type CharNum = number // 整数型，字符切割数量(最大下标值)
+declare type CharData = string // 字符串型，字符切割数据信息，格式：左,上,宽,高,点阵|左,上,宽,高,点阵|…）
 
 interface Turing {
 	Link(hwnd: hwnd, mode?: mode): void;
@@ -47,7 +56,7 @@ interface Turing {
 	 * @param width 整数型，可选，窗口宽度(默认0)
 	 * @param height 整数型，可选，窗口高度(默认0)
 	 */
-	Wndow_MoveTo(iHwnd?: hwnd, iLeft?: number, iTop?: number, width?: number, height?: number): void;
+	Window_MoveTo(iHwnd?: hwnd, iLeft?: number, iTop?: number, width?: number, height?: number): void;
 	/**
 	 * 锁定指定窗口句柄在屏幕上的位置
 	 * @param iHwnd 整数型，可选，窗口句柄(默认0:使用关联窗口句柄)
@@ -108,9 +117,9 @@ interface Turing {
 	/**
 	 * 对获取的图像像素数据进行显示查看
 	 * @param Mode 整数型，可选，模式：图像或直方图（默认0图像,1垂直直方图,2水平直方图）
-	 * @param subline 布尔型，可选，默认False（True显示十字辅助线）
+	 * @param subLine 布尔型，可选，默认False（True显示十字辅助线）
 	 */
-	Pixel_Preview(Mode?: number, subline?: boolean): Position;
+	Pixel_Preview(Mode?: number, subLine?: boolean): Position;
 	/**
 	 * 将内部的图像数据保存为.bmp图片文件
 	 * @param ImagePath
@@ -134,7 +143,7 @@ interface Turing {
 	 * @param value 整数型，可选，模式（默认0:宽|高|图像数据，1:宽|高，2:全部设置到剪切板）
 	 * @returns {ImageInfo}
 	 */
-	GetImageData(value?: number): ImageDataStirng;
+	GetImageData(value?: number): ImageDataString;
 	/**
 	 * 获取指定图片的宽度和高度
 	 * @param FilePath 字符串型，图片文件的路径(支持：bmp、png、jpg、gif格式)
@@ -223,7 +232,7 @@ interface Turing {
 	/**
 	 * (针对彩色图像处理)二值化滤镜
 	 * @param value 字符串型，色阶阈值（范围：0-255）
-	或者：指定颜色串BBGGRR-BDGDRD（"0000FF-000080|00FFFF"）(反色效果："@BBGGRR-DBDGDR")
+	或者：指定颜色串 BBGGRR-BDGDRD（"0000FF-000080|00FFFF"）(反色效果："@BBGGRR-DBDGDR")
 	或者：通过智能筛选黑白点数均衡取得（"ai"）
 	或者：通过最大类间方差法[Otsu]取得（"auto"）
 	 */
@@ -485,7 +494,7 @@ interface Turing {
 	Incise_ScopeAisle(Row: number, Column: number, Width: string, Height: string, Flag: number): number;
 	/**
 	 * 颜色分层字符切割（体验版--组合式）
-	 * @param interval nterval：整数型，颜色值之间的距离
+	 * @param interval interval：整数型，颜色值之间的距离
 	 * @param num num：整数型，过滤掉点数的数量
 	 * @param Width Width：字符串型，可选，保留字符切割宽度范围（例："50-150"）
 	 * @param Height Height：字符串型，可选，保留字符切割高度范围（例："30-100"）
@@ -505,11 +514,42 @@ interface Turing {
 	/**
 	 * 对切割的字符像素数据进行显示查看
 	 * @param index index：整数型，切割字符索引号
-	 * @returns {Postion} [点击图像位置的坐标，格式：x,y]
+	 * @returns { Position } [点击图像位置的坐标，格式：x,y]
 													x：返回图像上点击位置的X坐标
 													y：返回图像上点击位置的Y坐标
 	 */
 	Incise_Preview(index: number): Position;
+	// 切割字符修正处理
+	/**
+	 * Incise_AutoCharData 自动调整切割字符数据
+	 * @param Width 字符串型，可选，保留字符切割宽度范围（例："50-150"）。
+	 * @param Height：字符串型，可选，保留字符切割高度范围（例："30-100"）。
+	 * @returns CharNum：整数型，字符切割数量(最大下标值)
+	 */
+	Incise_AutoCharData(Width?: string, Height?: string): CharNum;
+	/**
+	 * 对切割的字符像素数据进行旋转纠正处理(使用白点占比最大的方法)
+	 * @param angle：整数型，旋转的正负度数值（范围：1~90）
+	 * @param value：整数型，旋转的度数步进（范围：1~9）
+	 */
+	Incise_CharRotateCorrect(angle: number, value: number): void;
+	/**
+	 * 对切割的字符像素数据进行倾斜矫正处理
+	 */
+	Incise_CharSlantCorrect(): void;
+	/**
+	 * 对切割的字符像素数据进行统一大小
+	 * @param iWidth：整数型，统一大小的宽度值
+	 * @param iHeight：整数型，统一大小的高度值
+	 */
+	Incise_CharSizeOne(iWidth: number, iHeight: number): void;
+	/**
+	 * 获取切割字符的数据结构信息
+	 * @param Mode：整数型，默认0:全部数据，1:左,上，2:左,上,宽,高，3:宽,高,点阵
+	 * @returns {CharData}
+	 */
+	Incise_GetCharData(Mode: number): CharData;
+
 	/** 文字识别 END */
 	/**
 	 * 获取当前已注册的插件完整路径

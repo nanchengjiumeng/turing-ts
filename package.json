@@ -1,7 +1,7 @@
 {
   "name": "ts-turing",
   "version": "3.1.0",
-  "description": "Use turing.dll in javascript",
+  "description": "Use turing.dll in javascript.",
   "keywords": [
     "turing",
     "dll",
@@ -12,11 +12,12 @@
   "typings": "dist/types/index.d.ts",
   "scripts": {
     "watch": "tsc --watch",
-    "tsc": "tsc",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@types/node": "^16.0.0"
+    "@types/node": "^16.0.0",
+    "winax": "1.18.0"
   },
   "author": "王羽彪 <1443837536@qq.com>",
   "license": "ISC",
