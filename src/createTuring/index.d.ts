@@ -543,14 +543,80 @@ interface Turing {
 	 * @param iHeight：整数型，统一大小的高度值
 	 */
 	Incise_CharSizeOne(iWidth: number, iHeight: number): void;
+	// 配置字符数据
 	/**
 	 * 获取切割字符的数据结构信息
 	 * @param Mode：整数型，默认0:全部数据，1:左,上，2:左,上,宽,高，3:宽,高,点阵
 	 * @returns {CharData}
 	 */
 	Incise_GetCharData(Mode: number): CharData;
+	/**
+	 * 修改图像中切割的字符数据
+	 * @param Index：整数型，切割字符数据对应的索引号
+	 * @param Left：整数型，可选，设置左边坐标（默认0）
+	 * @param Top：整数型，可选，设置顶上坐标（默认0）
+	 */
+	Incise_ModifyCharData(Index: number, Left?: number, Top?: number): void;
+	/**
+	 * 清除图像中切割的字符所有数据
+	 */
+	Incise_EraseData(): void;
+	/**
+	 * 追加图像数据为切割字符数据
+	 * @param Left：整数型，可选，设置左边坐标（默认0）
+	 * @param Top：整数型，可选，设置顶上坐标（默认0）
+	 * @returns {CharNum}
+	 */
+	Incise_AddCharData(Left: number, Top: number): CharNum;
+	/**
+	 * 对切割的两个字符像素数据进行合并处理
+	 * @param index1：整数型，切割字符索引号1
+	 * @param index2：整数型，切割字符索引号2（合并后删除此字符图像）
+	 * @returns {CharNum}
+	 */
+	Incise_JoinCharData(index1: number, index2: number): CharNum;
+	// 目标区域定位
+	/**
+	 * 目标检测区域定位（用法：同范围投影字符切割）
+	 * @param Row：整数型，行间隙（横向，最小值） 
+	 * @param Column：整数型，列间隙（纵向，最小值） 
+	 * @param Width：字符串型，可选，保留字符切割宽度范围（例："50-150"）。 
+	 * @param Height：字符串型，可选，保留字符切割高度范围（例："30-100"）。 
+	 * @param Flag：整数型，可选，排序规则（默认0书写顺序，1从左到右）
+	 */
+	Locate_TargetArea(Row: number, Column: number, Width?: string, Height?: string, Flag?: number): CharNum;
+	/**
+	 * 获取目标定位区域信息（需配合：目标检测定位）
+	 * @param Model：整数型，可选，模式（默认0全部数据，1:左,上，2:宽,高）
+	 * @returns Ret：字符串型，字符位置区域信息
+	 */
+	Locate_GetAreaInfo(Model?: number): string;
+	// 步骤四 加载字库
+	/**
+	 * 加载识别字库文件数据
+	 * @param LibPath：字符串型，识别字库文件路径 
+	 * @param iText：字符串型，可选，指定字库中的文字（类似白名单）
+	 * @returns 整数型，字库的数量
+	 */
+	Lib_Load(LibPath: string, iText: string): number;
+	/**
+	 * 加载识别字库字符串数据
+	 * @param LibStr：字符串型，识别字库的字符串内容（回车换行符用于分割数据） 
+	 * @param iText：字符串型，可选，指定字库中的文字（类似白名单）
+	 * @returns num：整数型，字库的数量
+	*/
+	Lib_LoadEx(LibStr: string, iText?: string): number;
+	/**
+	 * 创建系统的字体作为识别字库文件数据
+	 * @param Font：字符串型，系统中的字体名称|字体样式(默认0。数值：0正常，1粗体，2斜体。其他依次叠加数字) 
+	 * @param Size：整数型，字体的字号大小 
+	 * @param Text：字符串型，可选，设置字库内容，默认含有3500个汉字和英文数字符号。
+	 * @returns num：整数型，字库的数量
+	*/
+	Lib_Create(Font: string, Size: number, Text?: string): number
 
 	/** 文字识别 END */
+
 	/**
 	 * 获取当前已注册的插件完整路径
 	 * @returns 字符串型，插件完整路径

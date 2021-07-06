@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@types/node": "^16.0.0",
-    "winax": "1.18.0"
+    "node-watch": "^0.7.1"
   },
   "author": "王羽彪 <1443837536@qq.com>",
   "license": "ISC",
