@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="xyRotate" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">xyRotate 坐标系旋转</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>指定的坐标进行坐标系的旋转
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">[newX,newY] = TURING.xyRotate(qx, qy, sWidth, sHeight, degree)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+qx：整数型，x坐标<br>
+qy：整数型，y坐标<br>
+sWidth：整数型，可选，屏幕宽度（默认0）<br>
+sHeight：整数型，可选，屏幕高度（默认0）<br>
+degree：整数型，可选，旋转角度（默认270，支持：0,90,180,270,-90）</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>[newX,newY]：字符串型，新的坐标(可以使用Split、Clng进行坐标拆分和转整数)</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("xyRotate1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='xyRotate1'>
+X = 50
+Y = 30
+'逆时针旋转90度的坐标系
+newXY = Split(TURING.xyRotate(X,Y,1920,1080,270),",")
+TracePrint Clng(newXY(0))
+TracePrint Clng(newXY(1))
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

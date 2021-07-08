@@ -1,0 +1,39 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="UI_Zoom" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">UI_Zoom 放大镜</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>抓取屏幕坐标与颜色值（及窗口客户区坐标和RGB分量）
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">ret = TURING.UI_Zoom()</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>无</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>ret：字符串型，[x坐标,y坐标,16进制颜色值|窗口客户区x坐标,y坐标,句柄|R分量,G分量,B分量]</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("UI_Zoom1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='UI_Zoom1'>
+'放大镜：获取坐标颜色，～抓取，Alt+方向键微调，Esc取消
+'结果：821,586,FF9933|237,265,199174|51,153,255
+TracePrint TURING.UI_Zoom() 
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">界面效果</td>
+        <td><img src="img/UI_Zoom.PNG" /></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

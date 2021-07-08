@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Screen_PrintImage" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Screen_PrintImage 屏幕打印图像</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>直接在屏幕上打印图像像素数据
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">TURING.Screen_PrintImage(x, y)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+x：整数型，可选，屏幕X坐标(默认0)<br>
+y：整数型，可选，屏幕X坐标(默认0)</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>无</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Screen_PrintImage1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Screen_PrintImage1'>
+'获取屏幕图像数据
+Call TURING.Pixel_FromScreen(0, 0, 250, 250)
+'图像打印到屏幕上(但是会被刷新掉)
+Call TURING.Screen_PrintImage(250, 250)
+Delay 1000
+'强制刷新屏幕
+Call TURING.Screen_Refresh()
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

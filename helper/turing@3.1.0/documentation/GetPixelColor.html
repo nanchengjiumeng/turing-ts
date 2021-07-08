@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="GetPixelColor" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">GetPixelColor 得到指定点的颜色</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>得到屏幕指定位置点的颜色
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">color = TURING.GetPixelColor(x, y, mode)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+x：整数型，屏幕X坐标<br>
+y：整数型，屏幕Y坐标<br>
+mode：整数型，取色模式（默认0：普通取色，1：增强取色（半透明窗体），2：取内部图像数据颜色）</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>color：字符串型，16进制颜色值</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("GetPixelColor1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='GetPixelColor1'>
+'获取屏幕图像数据
+Call TURING.Pixel_FromScreen(10, 10, 300, 200)
+'0：普通取色
+TracePrint TURING.GetPixelColor(41, 61)
+'1：增强取色（半透明窗体）
+TracePrint TURING.GetPixelColor(41, 61, 1)
+'2：取内部图像数据颜色
+TracePrint TURING.GetPixelColor(31, 51, 2)
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">易语言</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("GetPixelColor2")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='GetPixelColor2'>
+.版本 2
+
+.子程序 _临时子程序
+.局部变量 图灵, 类_TURING
+.局部变量 颜色值, 文本型
+
+图灵.创建对象 ()
+' 获取屏幕图像数据
+图灵.来源_获取屏幕像素 (10, 10, 300, 200)
+' 0：普通取色
+颜色值 ＝ 图灵.图色_得到指定点的颜色 (41, 61)
+输出调试文本 (“颜色值：” ＋ 颜色值)
+' 1：增强取色（半透明窗体）
+颜色值 ＝ 图灵.图色_得到指定点的颜色 (41, 61, 1)
+输出调试文本 (“颜色值：” ＋ 颜色值)
+' 2：取内部图像数据颜色
+颜色值 ＝ 图灵.图色_得到指定点的颜色 (31, 51, 2)
+输出调试文本 (“颜色值：” ＋ 颜色值)
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

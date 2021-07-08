@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Window_GetAncestor" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Window_GetAncestor 取祖窗口句柄</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>指定任意窗口句柄即可得到窗口最顶级的祖父句柄
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">Hwnd = TURING.Window_GetAncestor(iHwnd)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>iHwnd：整数型，可选，窗口内任意元素句柄(默认0:使用关联窗口句柄)</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>Hwnd：整数型，祖父（顶级）窗口句柄</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Window_GetAncestor1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Window_GetAncestor1'>
+'参数是：窗口内任意元素句柄即可
+任意句柄 = 136308
+祖父句柄 = TURING.Window_GetAncestor(任意句柄)
+TracePrint 祖父句柄
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">易语言</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Window_GetAncestor2")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Window_GetAncestor2'>
+.版本 2
+
+.子程序 _临时子程序
+.局部变量 图灵, 类_TURING
+.局部变量 任意句柄, 整数型
+.局部变量 祖父句柄, 整数型
+
+图灵.创建对象 ()
+' 参数是：窗口内任意元素句柄即可
+任意句柄 ＝ 136308
+祖父句柄 ＝ 图灵.句柄_取祖窗口句柄 (任意句柄)
+输出调试文本 (“祖父句柄：” ＋ 到文本 (祖父句柄))
+信息框 (祖父句柄, 0, , )
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

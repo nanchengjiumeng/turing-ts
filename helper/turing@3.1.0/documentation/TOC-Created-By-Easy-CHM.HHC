@@ -1,0 +1,1359 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="EasyCHM.exe  www.zipghost.com">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ExWindow Styles" value="0x200">
+	<param name="Window Styles" value="0x800025">
+	<param name="Font" value="MS Sans Serif,9,0">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="虹鱼图灵识别系统(TURING.FISR)">
+		<param name="Local" value="logo.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="关于3.01版">
+			<param name="Local" value="About.html">
+			<param name="ImageNumber" value="37">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="新手引导（必看）">
+			<param name="Local" value="New.html">
+			<param name="ImageNumber" value="38">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="【免责声明】">
+			<param name="Local" value="免责声明.html">
+			<param name="ImageNumber" value="37">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="窗口句柄（后台）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Link 关联窗口">
+			<param name="Local" value="Link.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UnLink 解除窗口关联">
+			<param name="Local" value="UnLink.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_FindHwnd 查找窗口句柄">
+			<param name="Local" value="Window_FindHwnd.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_GetSize 得到窗口大小">
+			<param name="Local" value="Window_GetSize.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_GetAncestor 取祖窗口句柄">
+			<param name="Local" value="Window_GetAncestor.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_GetPointHwnd 取指定坐标下句柄">
+			<param name="Local" value="Window_GetPointHwnd.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_MoveTo 移动窗口位置">
+			<param name="Local" value="Window_MoveTo.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_Lock 窗口位置锁定">
+			<param name="Local" value="Window_Lock.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_Enum 枚举所有顶层窗口句柄">
+			<param name="Local" value="Window_Enum.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_EnumChild 枚举指定窗口的所有子句柄">
+			<param name="Local" value="Window_EnumChild.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Window_FakeActive 窗口假激活">
+			<param name="Local" value="Window_FakeActive.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文字识别（主打）">
+		<param name="ImageNumber" value="3">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="步骤1：获取图像">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_FromScreen 获取屏幕像素">
+				<param name="Local" value="Pixel_FromScreen.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_FromPicture 获取图片像素">
+				<param name="Local" value="Pixel_FromPicture.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_FromMemory 获取内存像素">
+				<param name="Local" value="Pixel_FromMemory.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_FromMouse 获取鼠标像素">
+				<param name="Local" value="Pixel_FromMouse.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_Preview 像素数据预览">
+				<param name="Local" value="Pixel_Preview.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="配置图像数据">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SaveImageData 图像数据保存为图片">
+				<param name="Local" value="SaveImageData.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="LoadImageData 载入图像数据">
+				<param name="Local" value="LoadImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GetMemoryDataBmp 获取图像数据内存地址">
+				<param name="Local" value="GetMemoryDataBmp.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GetImageData 获取图像数据">
+				<param name="Local" value="GetImageData.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GetImageSize 获取图片大小">
+				<param name="Local" value="GetImageSize.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GetGifFrames 获取GIF图片帧数">
+				<param name="Local" value="GetGifFrames.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_ColorImageData 获取颜色图层像素">
+				<param name="Local" value="Pixel_ColorImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_ChannelImageData 获取通道图层像素">
+				<param name="Local" value="Pixel_ChannelImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_CutImageData 拆分图像数据">
+				<param name="Local" value="Pixel_CutImageData.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetImageData 配置拆分图像数据">
+				<param name="Local" value="Pixel_SetImageData.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetSceneImageData 配置图像数据环境">
+				<param name="Local" value="Pixel_SetSceneImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetImageDataCut 配置切割图像数据">
+				<param name="Local" value="Pixel_SetImageDataCut.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetImageDataLib 配置字库图像数据">
+				<param name="Local" value="Pixel_SetImageDataLib.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetLayerImageData 配置图层图像数据">
+				<param name="Local" value="Pixel_SetLayerImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="剪切板图像">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_GetClpImageData 获取剪切板图像数据">
+				<param name="Local" value="Pixel_GetClpImageData.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetClpImageData 设置剪切板图像数据">
+				<param name="Local" value="Pixel_SetClpImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetClpScreenData 设置剪切板屏幕像素">
+				<param name="Local" value="Pixel_SetClpScreenData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SetClpPictureData 设置剪切板图片像素">
+				<param name="Local" value="Pixel_SetClpPictureData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Pixel_SaveClpImageData 保存剪切板图片">
+				<param name="Local" value="Pixel_SaveClpImageData.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="步骤2：滤镜处理">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="（彩色）滤镜">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_Binaryzation 二值化">
+				<param name="Local" value="Filter_Binaryzation.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_Gray 灰度">
+				<param name="Local" value="Filter_Gray.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_Posterization 色调分离">
+				<param name="Local" value="Filter_Posterization.html">
+				<param name="ImageNumber" value="12">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_CheckPoints 筛选色点">
+				<param name="Local" value="Filter_CheckPoints.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_PixelStroke 像素描边">
+				<param name="Local" value="Filter_PixelStroke.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_DiffeExtract 差异提取">
+				<param name="Local" value="Filter_DiffeExtract.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_KeepColors 颜色相似保留">
+				<param name="Local" value="Filter_KeepColors.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filter_BlockChoose 色块选留">
+				<param name="Local" value="Filter_BlockChoose.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="（黑白）滤镜">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Despeckle 清除杂点">
+			<param name="Local" value="Filter_Despeckle.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_DespeckleEx 清除杂点_增强">
+			<param name="Local" value="Filter_DespeckleEx.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_LeaveSize 保留大小">
+			<param name="Local" value="Filter_LeaveSize.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_EraseLine 去掉直线">
+			<param name="Local" value="Filter_EraseLine.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_LineCheck 直线检测">
+			<param name="Local" value="Filter_LineCheck.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Outline 获取轮廓">
+			<param name="Local" value="Filter_Outline.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_ExtractBlock 提取色块">
+			<param name="Local" value="Filter_ExtractBlock.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_SlantCorrect 倾斜矫正">
+			<param name="Local" value="Filter_SlantCorrect.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_RotateCorrect 旋转纠正">
+			<param name="Local" value="Filter_RotateCorrect.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_InverseColor 颠倒颜色">
+			<param name="Local" value="Filter_InverseColor.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_DilationErosion 膨胀腐蚀">
+			<param name="Local" value="Filter_DilationErosion.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_ThinBone 细化抽骨">
+			<param name="Local" value="Filter_ThinBone.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_ValidCut 有效图像">
+			<param name="Local" value="Filter_ValidCut.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_FenceAdjust 栅栏调整">
+			<param name="Local" value="Filter_FenceAdjust.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+	</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="（通用）滤镜">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Zoom 等比缩放">
+			<param name="Local" value="Filter_Zoom.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_ZoomOne 缩放归一化">
+			<param name="Local" value="Filter_ZoomOne.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_ColorChoose 颜色选留">
+			<param name="Local" value="Filter_ColorChoose.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_DispelSpot 祛除斑点">
+			<param name="Local" value="Filter_DispelSpot.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Complementary 查找互补色">
+			<param name="Local" value="Filter_Complementary.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Tailor 延伸裁剪">
+			<param name="Local" value="Filter_Tailor.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Rotate 固定旋转">
+			<param name="Local" value="Filter_Rotate.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Mirror 固定镜像">
+			<param name="Local" value="Filter_Mirror.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Shift 固定移位">
+			<param name="Local" value="Filter_Shift.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Softness 固定柔化">
+			<param name="Local" value="Filter_Softness.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Diffuse 固定扩散">
+			<param name="Local" value="Filter_Diffuse.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_Negative 电影底片">
+			<param name="Local" value="Filter_Negative.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Filter_DarkColor 呈现暗调">
+			<param name="Local" value="Filter_DarkColor.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="步骤3：字符切割">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_FixedLocation 固定位置切割">
+			<param name="Local" value="Incise_FixedLocation.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_RandomOrientation 随机方位切割">
+			<param name="Local" value="Incise_RandomOrientation.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_ConnectedArea 连通区域切割">
+			<param name="Local" value="Incise_ConnectedArea.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_ScopeAisle 范围投影切割">
+			<param name="Local" value="Incise_ScopeAisle.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_ColorLayered 颜色分层切割">
+			<param name="Local" value="Incise_ColorLayered.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_Preview 切割字符预览">
+			<param name="Local" value="Incise_Preview.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="切割字符修正处理">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_AutoCharData 自动调整切割字符数据">
+			<param name="Local" value="Incise_AutoCharData.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_CharRotateCorrect 切割字符旋转纠正">
+			<param name="Local" value="Incise_CharRotateCorrect.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_CharSlantCorrect 切割字符倾斜矫正">
+			<param name="Local" value="Incise_CharSlantCorrect.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_CharSizeOne 切割字符大小归一化">
+			<param name="Local" value="Incise_CharSizeOne.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="配置字符数据">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_GetCharData 获取切割字符数据">
+			<param name="Local" value="Incise_GetCharData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_ModifyCharData 修改切割字符数据">
+			<param name="Local" value="Incise_ModifyCharData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_EraseData 清除切割字符数据">
+			<param name="Local" value="Incise_EraseData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_AddCharData 追加图像数据为切割数据">
+			<param name="Local" value="Incise_AddCharData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Incise_JoinCharData 合并切割字符">
+			<param name="Local" value="Incise_JoinCharData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="目标区域定位">
+			<param name="ImageNumber" value="3">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Locate_TargetArea 目标检测定位">
+			<param name="Local" value="Locate_TargetArea.html">
+			<param name="ImageNumber" value="28">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Locate_GetAreaInfo 获取定位区域信息">
+			<param name="Local" value="Locate_GetAreaInfo.html">
+			<param name="ImageNumber" value="27">
+			</OBJECT>
+	</UL>
+	</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="步骤4：加载字库">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Load 加载识别字库">
+			<param name="Local" value="Lib_Load.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_LoadEx 加载识别字库_扩展">
+			<param name="Local" value="Lib_LoadEx.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Create 创建识别字库">
+			<param name="Local" value="Lib_Create.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Add 添加新的识别字库">
+			<param name="Local" value="Lib_Add.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Use 使用指定识别字库">
+			<param name="Local" value="Lib_Use.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_AddData 追加识别字库">
+			<param name="Local" value="Lib_AddData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_AddImageData 图像数据追加为字库">
+			<param name="Local" value="Lib_AddImageData.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_UBound 获得字库数量">
+			<param name="Local" value="Lib_UBound.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_EraseData 清空字库数据">
+			<param name="Local" value="Lib_EraseData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_AnalyzeFontSize 分析切割字符的字体与字号">
+			<param name="Local" value="Lib_AnalyzeFontSize.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Preview 字库点阵预览">
+			<param name="Local" value="Lib_Preview.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="制作识别字库">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Share 分享识别字库">
+			<param name="Local" value="Lib_Share.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_ShareUTF8 分享UTF8无BOM识别字库">
+			<param name="Local" value="Lib_ShareUTF8.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Generate 生成字符串点阵">
+			<param name="Local" value="Lib_Generate.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_GetCharData 获取字库信息">
+			<param name="Local" value="Lib_GetCharData.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_OneCharData 字符切割数据">
+			<param name="Local" value="Lib_OneCharData.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_Save 存储识别字库">
+			<param name="Local" value="Lib_Save.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Lib_SaveEx 存储识别字库_扩展">
+			<param name="Local" value="Lib_SaveEx.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="步骤5：识别比对">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="OCR 识别">
+			<param name="Local" value="OCR.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="OCRex 识别_增强版">
+			<param name="Local" value="OCRex.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindText 识别_快速找字">
+			<param name="Local" value="FindText.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="图色查找（优秀）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetPixelColor 得到指定点颜色">
+			<param name="Local" value="GetPixelColor.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindColor 区域找色">
+			<param name="Local" value="FindColor.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindColorExS 区域找多色">
+			<param name="Local" value="FindColorExS.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindColorBlock 区域找色块">
+			<param name="Local" value="FindColorBlock.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindMultiColor 区域多点找色">
+			<param name="Local" value="FindMultiColor.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindImage 区域找图">
+			<param name="Local" value="FindImage.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindImageS 区域找所有图">
+			<param name="Local" value="FindImageS.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindImageEx 区域找其中图">
+			<param name="Local" value="FindImageEx.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindImageExS 区域找所有图所有坐标">
+			<param name="Local" value="FindImageExS.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindMouseShape 鼠标形状识别">
+			<param name="Local" value="FindMouseShape.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FindShape 多边形识别">
+			<param name="Local" value="FindShape.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CountColorNum 统计指定颜色点数量">
+			<param name="Local" value="CountColorNum.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetColorPoints 统计每种颜色点数量">
+			<param name="Local" value="GetColorPoints.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetAveRGB 获取范围内颜色均值">
+			<param name="Local" value="GetAveRGB.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="BGRvsRGB BGR与RGB互转">
+			<param name="Local" value="BGRvsRGB.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="RGBtoHSV RGB转HSV">
+			<param name="Local" value="RGBtoHSV.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="HSVtoRGB HSV转RGB">
+			<param name="Local" value="HSVtoRGB.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ToRGB 颜色值转RGB分量">
+			<param name="Local" value="ToRGB.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ToColor RGB分量转颜色值">
+			<param name="Local" value="ToColor.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ToColorName 得到颜色值的名称">
+			<param name="Local" value="ToColorName.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ColorSimilarity 颜色相似程度">
+			<param name="Local" value="ColorSimilarity.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="键鼠模拟（备胎）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_KeyPress 键盘按键">
+			<param name="Local" value="KM_KeyPress.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_KeyDown 键盘按下">
+			<param name="Local" value="KM_KeyDown.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_KeyUp 键盘弹起">
+			<param name="Local" value="KM_KeyUp.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_SendString 键盘输入文字">
+			<param name="Local" value="KM_SendString.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_LeftClick 鼠标左键单击">
+			<param name="Local" value="KM_LeftClick.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_LeftDbClick 鼠标左键双击">
+			<param name="Local" value="KM_LeftDbClick.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_LeftDown 鼠标左键按下">
+			<param name="Local" value="KM_LeftDown.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_LeftUp 鼠标左键弹起">
+			<param name="Local" value="KM_LeftUp.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_MiddleClick 鼠标中键单击">
+			<param name="Local" value="KM_MiddleClick.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_MiddleDown 鼠标中键按下">
+			<param name="Local" value="KM_MiddleDown.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_MiddleUp 鼠标中键弹起">
+			<param name="Local" value="KM_MiddleUp.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_RightClick 鼠标右键单击">
+			<param name="Local" value="KM_RightClick.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_RightDown 鼠标右键按下">
+			<param name="Local" value="KM_RightDown.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_RightUp 鼠标右键弹起">
+			<param name="Local" value="KM_RightUp.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_MoveTo 鼠标移动到">
+			<param name="Local" value="KM_MoveTo.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_GetCursorPos 得到鼠标当前位置">
+			<param name="Local" value="KM_GetCursorPos.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KM_Delay 延时">
+			<param name="Local" value="KM_Delay.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="绘画图形（特效）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_CreateCanvas 创建空白画布">
+			<param name="Local" value="Draw_CreateCanvas.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Point 绘图画点">
+			<param name="Local" value="Draw_Point.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Line 绘图画线">
+			<param name="Local" value="Draw_Line.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_DottedLine 绘图画虚线">
+			<param name="Local" value="Draw_DottedLine.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Rectangle 绘图矩形">
+			<param name="Local" value="Draw_Rectangle.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Block 绘图方块">
+			<param name="Local" value="Draw_Block.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Circle 绘图画圆">
+			<param name="Local" value="Draw_Circle.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Ellipse 绘图画椭圆">
+			<param name="Local" value="Draw_Ellipse.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Heart 绘图画爱心">
+			<param name="Local" value="Draw_Heart.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Arrow 绘图画箭头">
+			<param name="Local" value="Draw_Arrow.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Text 绘图文字">
+			<param name="Local" value="Draw_Text.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Image 绘图图像">
+			<param name="Local" value="Draw_Image.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Fill 绘图填充">
+			<param name="Local" value="Draw_Fill.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Backups 图像数据备份">
+			<param name="Local" value="Draw_Backups.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_Recover 图像数据恢复">
+			<param name="Local" value="Draw_Recover.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Draw_CAPTCHA 绘图生成验证码">
+			<param name="Local" value="Draw_CAPTCHA.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="屏幕打印（预览）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Screen_PrintImage 屏幕打印图像">
+			<param name="Local" value="Screen_PrintImage.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Screen_PrintText 屏幕打印文字">
+			<param name="Local" value="Screen_PrintText.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Screen_Refresh 屏幕刷新">
+			<param name="Local" value="Screen_Refresh.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文本文件（内容）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FileSaveGIF 生成GIF文件">
+			<param name="Local" value="FileSaveGIF.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FileDownload 下载网络文件">
+			<param name="Local" value="FileDownload.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_Search 遍历指定目录下所有文件">
+			<param name="Local" value="Files_Search.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_Merge 多个文件合并">
+			<param name="Local" value="Files_Merge.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_Split 拆分多个文件">
+			<param name="Local" value="Files_Split.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_Read 读取文本文件内容">
+			<param name="Local" value="Files_Read.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_Save 保存文本文件内容">
+			<param name="Local" value="Files_Save.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_WriteLine 写入一行文本内容">
+			<param name="Local" value="Files_WriteLine.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_Dried 压缩文件">
+			<param name="Local" value="Files_Dried.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Files_UnDried 解压文件">
+			<param name="Local" value="Files_UnDried.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Json_Read 读取JSON文件">
+			<param name="Local" value="Json_Read.html">
+			<param name="ImageNumber" value="13">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Json_Decode 解析JSON结构">
+			<param name="Local" value="Json_Decode.html">
+			<param name="ImageNumber" value="13">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="用户交互（界面）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UI_Zoom 放大镜">
+			<param name="Local" value="UI_Zoom.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UI_Area 定位区域">
+			<param name="Local" value="UI_Area.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UI_MsgBox 弹出对话框">
+			<param name="Local" value="UI_MsgBox.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UI_InputBox 显示输入框">
+			<param name="Local" value="UI_InputBox.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="多媒体（语音）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_TextToSpeech 文字转语音">
+			<param name="Local" value="Media_TextToSpeech.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_PlayMusic 播放音乐">
+			<param name="Local" value="Media_PlayMusic.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_StopMusic 停止播放">
+			<param name="Local" value="Media_StopMusic.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_PauseMusic 暂停播放">
+			<param name="Local" value="Media_PauseMusic.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_ResumeMusic 继续播放">
+			<param name="Local" value="Media_ResumeMusic.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_GetMusicLength 获取播放时间长度">
+			<param name="Local" value="Media_GetMusicLength.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_GetMusicPos 获取播放进度">
+			<param name="Local" value="Media_GetMusicPos.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_SetMusicPos 设置播放进度">
+			<param name="Local" value="Media_SetMusicPos.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_GetVolume 获取声音大小">
+			<param name="Local" value="Media_GetVolume.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_SetVolume 设置声音大小">
+			<param name="Local" value="Media_SetVolume.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Media_IsPlaying 是否在播放">
+			<param name="Local" value="Media_IsPlaying.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="数学统计（算法）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Different 与众不同">
+			<param name="Local" value="Different.html">
+			<param name="ImageNumber" value="9">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="EvalVariance 统计差平方">
+			<param name="Local" value="EvalVariance.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetValidArea 获取有效区域范围">
+			<param name="Local" value="GetValidArea.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="AngleCalc 角度计算">
+			<param name="Local" value="AngleCalc.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="xyRotate 坐标系旋转">
+			<param name="Local" value="xyRotate.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="BezierCurve 贝塞尔曲线">
+			<param name="Local" value="BezierCurve.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetLineAllPos 取直线上所有坐标">
+			<param name="Local" value="GetLineAllPos.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetAllPoints 获取所有端点坐标">
+			<param name="Local" value="GetAllPoints.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetOneLine 指定端点之间的线段（自动寻路）">
+			<param name="Local" value="GetOneLine.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetAllLines 所有端点之间的线段">
+			<param name="Local" value="GetAllLines.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TwoLinesCrossPos 取两直线相交坐标">
+			<param name="Local" value="TwoLinesCrossPos.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="加密解密（编码）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="BINtoHEX 二进制转十六进制字符串">
+			<param name="Local" value="BINtoHEX.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="HEXtoBIN 十六进制转二进制字符串">
+			<param name="Local" value="HEXtoBIN.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DECtoBIN 十进制转二进制字符串">
+			<param name="Local" value="DECtoBIN.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Image_Base64Encode 图片Base64编码">
+			<param name="Local" value="Image_Base64Encode.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ImageFormatConverter 图片格式转换">
+			<param name="Local" value="ImageFormatConverter.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pass_MD5String 字符串MD5加密">
+			<param name="Local" value="Pass_MD5String.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pass_Encode 字符串加密">
+			<param name="Local" value="Pass_Encode.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pass_Uncode 字符串解密">
+			<param name="Local" value="Pass_Uncode.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="系统信息（设备）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetTime 精准的计算时间差">
+			<param name="Local" value="GetTime.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetNetworkTime 获取网络时间">
+			<param name="Local" value="GetNetworkTime.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GetHDSN 获取硬盘型号">
+			<param name="Local" value="GetHDSN.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Memory_Clear 内存清理">
+			<param name="Local" value="Memory_Clear.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Memory_GetInfo 获取内存信息">
+			<param name="Local" value="Memory_GetInfo.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="桥接调试（安卓）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_Link 关联ADB调试桥">
+			<param name="Local" value="Adb_Link.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_Devices 查看设备名称">
+			<param name="Local" value="Adb_Devices.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_Screencap 获取设备屏幕像素">
+			<param name="Local" value="Adb_Screencap.html">
+			<param name="ImageNumber" value="12">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_Tap 短暂点击">
+			<param name="Local" value="Adb_Tap.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_Swipe 滑动屏幕">
+			<param name="Local" value="Adb_Swipe.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_KeyEvent 响应按键">
+			<param name="Local" value="Adb_KeyEvent.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adb_InputText 输入内容">
+			<param name="Local" value="Adb_InputText.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="安卓KeyCode表">
+			<param name="Local" value="安卓键码表.html">
+			<param name="ImageNumber" value="10">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="引擎运行（脚本）">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Run 运行命令行">
+			<param name="Local" value="Run.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ShellRun 执行">
+			<param name="Local" value="ShellRun.html">
+			<param name="ImageNumber" value="10">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="KillApp 结束进程">
+			<param name="Local" value="KillApp.html">
+			<param name="ImageNumber" value="10">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="RunVBScript 运行VBS脚本">
+			<param name="Local" value="RunVBScript.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Calc 计算器">
+			<param name="Local" value="Calc.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="范例">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Path 插件路径">
+		<param name="Local" value="Path.html">
+		<param name="ImageNumber" value="11">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Version 版本号">
+		<param name="Local" value="Version.html">
+		<param name="ImageNumber" value="11">
+		</OBJECT>
+</UL>
+</BODY></HTML>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Lib_AnalyzeFontSize" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Lib_AnalyzeFontSize 分析切割字符的字体与字号</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>分析切割字符的字体与字号
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">FontSize = TURING.Lib_AnalyzeFontSize(Text, Mode)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+Text：字符串型，切割字符对应的文字<br>
+Mode：字符串型，样式，默认"0|0"（格式：0正常,1粗体,2斜体,3粗斜体|0中文字体，1英文字体）</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>FontSize：字符串型，字体与字号（格式：字体,字号,相似度|字体,字号,相似度|…）</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Lib_AnalyzeFontSize1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Lib_AnalyzeFontSize1'>
+'加载需要分析的图片
+Call TURING.Pixel_FromPicture("C:\找图色.png")
+'二值化处理
+Call TURING.Filter_Binaryzation("128-255")
+'图像显示预览
+Call TURING.Pixel_Preview()
+'范围投影切割字符
+Call TURING.Incise_ScopeAisle(2, 1)
+'【注意】分析之前，必须把每个字符切割完整，如：不要把“好”字切割成“女子”！
+'开始：分析字符的字体与字号（搜查时间会比较久，请耐心等待）
+TracePrint TURING.Lib_AnalyzeFontSize("找图色", "0|0")
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Lib_OneCharData" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Lib_OneCharData 字符切割数据</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>获取图像切割的字符点阵库内容
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">lattice = TURING.Lib_OneCharData(index)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>index：整数型，切割字符索引号</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>lattice：字符串型，字符点阵（格式：字符宽,高|二进制字符串点阵）</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Lib_OneCharData1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Lib_OneCharData1'>
+'获取屏幕图像数据
+Call TURING.Pixel_FromScreen(0,0,200,100)
+'二值化处理
+Call TURING.Filter_Binaryzation("0-128")
+'显示获取的图像
+Call TURING.Pixel_Preview()
+'固定位置切割字符
+数量 = TURING.Incise_FixedLocation(0,0,64,64,50,3)
+For i = 0 To 数量
+    '切割的字符生成点阵
+    字符点阵 = TURING.Lib_OneCharData(i)
+    TracePrint 字符点阵
+Next
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

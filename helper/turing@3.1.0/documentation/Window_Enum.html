@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Window_Enum" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Window_Enum 枚举所有顶层窗口句柄</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>根据类名或者标题来枚举所有顶层窗口句柄
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">Hwnds = TURING.Window_Enum(iClass, iTitle)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+iClass：字符串型，模糊筛选条件：窗口类名(空填"")<br>
+iTitle：字符串型，模糊筛选条件：窗口标题(空填"")</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>Hwnds：字符串型，所有顶层窗口句柄(格式：句柄|句柄|…)</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Window_Enum1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Window_Enum1'>
+'返回符合标题的所有窗口句柄
+类名 = ""
+标题 = "我的眼睛--图灵识别"
+TracePrint TURING.Window_Enum(类名, 标题)
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">易语言</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Window_Enum2")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Window_Enum2'>
+.版本 2
+
+.子程序 _临时子程序
+.局部变量 图灵, 类_TURING
+.局部变量 窗口句柄, 文本型
+.局部变量 类名, 文本型
+.局部变量 标题, 文本型
+
+图灵.创建对象 ()
+' 返回符合标题的所有窗口句柄
+类名 ＝ “”
+标题 ＝ “我的眼睛--图灵识别”
+窗口句柄 ＝ 图灵.句柄_枚举所有顶层窗口句柄 (类名, 标题)
+输出调试文本 (“窗口句柄：” ＋ 到文本 (窗口句柄))
+信息框 (窗口句柄, 0, , )
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

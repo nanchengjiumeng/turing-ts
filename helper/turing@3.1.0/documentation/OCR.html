@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="OCR" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">OCR 识别</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>进行图像文字识别
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">text = TURING.OCR(Similar, Model, Interval)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+Similar：整数型，点数匹配相似度（范围0~100，默认0匹配最高的相似）<br>
+Model：整数型，设置返回结果内容，格式：默认0:识别文字，1:识别文字|第1个字x坐标,y坐标|…，2:第1个文字,x坐标,y坐标|…，3:第1个文字,x坐标,y坐标,相似度|…，4:第1个文字|第2个文字|…<br>
+Interval：整数型，可选，字符之间的间隔（默认0），Model为2或3时才生效</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>text：字符串型，识别得到的文字内容</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("OCR1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='OCR1'>
+'获取文件图像数据
+Call TURING.Pixel_FromPicture("C:\8201.bmp")
+'二值化处理
+Call TURING.Filter_Binaryzation("128-255")
+'图像预览
+Call TURING.Pixel_Preview()
+ '固定位置切割
+数量 = TURING.Incise_FixedLocation(6,4,7,11,13,4)
+'加载识别字库
+数量 = TURING.Lib_Load("C:\识别库.lib")
+'识别
+TracePrint "识别方法1：" & TURING.OCR()
+
+识别结果 = Split(TURING.OCR(0, 1), "|")
+TracePrint "识别方法2：" &  识别结果(0)
+n = UBound(识别结果) - 1
+For i = 1 To n
+    TracePrint "每个字符的坐标：" & 识别结果(i)
+Next
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">易语言</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("OCR2")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='OCR2'>
+.版本 2
+
+.子程序 _临时子程序
+.局部变量 图灵, 类_TURING
+.局部变量 识别结果, 文本型, , "0"
+.局部变量 数量, 整数型
+.局部变量 i, 整数型
+
+图灵.创建对象 ()
+' 获取文件图像数据
+图灵.来源_获取图片像素 (“C:\8201.bmp”)
+' 二值化处理
+图灵.滤镜_彩色_二值化 (“128-255”)
+' 图像预览
+图灵.来源_像素数据预览 ()
+' 固定位置切割
+数量 ＝ 图灵.切割_固定位置切割 (6, 4, 7, 11, 13, 4)
+' 加载识别字库
+数量 ＝ 图灵.字库_加载识别字库 (“C:\识别库.lib”)
+' 识别
+输出调试文本 (“识别方法1：” ＋ 到文本 (图灵.识别 ()))
+识别结果 ＝ 分割文本 (图灵.识别 (0, 1), “|”, )
+输出调试文本 (“识别方法2：” ＋ 到文本 (识别结果 [1]))
+.变量循环首 (1, 取数组成员数 (识别结果), 1, i)
+    输出调试文本 (“每个字符的坐标：” ＋ 到文本 (识别结果 [i]))
+.变量循环尾 ()
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">备注</td>
+        <td >【注意】【注意】【注意】返回的是相对坐标</td></tr>
+        <tr><td class="tab_left" valign="top">识别效果</td>
+        <td><img src="img/OCR.PNG" /></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

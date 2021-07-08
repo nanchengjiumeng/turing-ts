@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Json_Decode" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Json_Decode 解析JSON结构</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>解析JSON结构
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">Ret = TURING.Json_Decode(Points)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>Points：字符串型，节点层级键值名，多参数结构(如："Image", "Thumbnail", "Url")</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>Ret：变体型，返回键值内容</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Json_Decode1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Json_Decode1'>
+'初始化
+Call TURING.Json_Read("D:\json.txt")
+'获取数据
+TracePrint TURING.Json_Decode("Image","Width")
+TracePrint TURING.Json_Decode("Image","Height")
+TracePrint TURING.Json_Decode("Image","Title")
+TracePrint TURING.Json_Decode("Image", "Thumbnail", "Url")
+下标 = UBound(TURING.Json_Decode("Image","IDs"))
+For i = 0 To 下标
+    TracePrint TURING.Json_Decode("Image","IDs", i)
+Next
+'JSON文本内容如下：
+/*
+{
+   "Image":{
+       "Width":800,
+       "Height":600,
+       "Title":"View from 15th Floor",
+       "Thumbnail":{
+           "Url":"http://www.example.com/image/481989943",
+           "Height":125,
+           "Width":"100"
+       },
+       "IDs":[116, 943, 234, 38793]
+     }
+}
+*/
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

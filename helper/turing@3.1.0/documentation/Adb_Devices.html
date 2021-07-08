@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Adb_Devices" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Adb_Devices 查看设备名称</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>查看所有设备名称（用于多设备时切换）
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">DevicesIdS = TURING.Adb_Devices(Serial)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>Serial：整数型，可选，设备序号（默认0:所有设备）</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>DevicesIdS：字符串型，设备名称（格式：设备名称|设备名称|…）</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Adb_Devices1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Adb_Devices1'>
+'关联调试桥（仅需脚本开头调用一次）
+Call TURING.Adb_Link("C:\Program Files (x86)\dnplayer2\adb.exe")
+'在多设备时，可以切换序号
+TracePrint TURING.Adb_Devices(1)
+'截屏(全屏参数：0,0,0,0)
+Call TURING.Adb_Screencap(0,0,500,300)
+'图像预览
+Call TURING.Pixel_Preview()
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">易语言</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("eAdb_Devices1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='eAdb_Devices1'>
+.版本 2
+
+.子程序 命令例子参考
+.局部变量 图灵, 类_TURING
+
+' 仅需调用一次
+图灵.创建对象 ()
+' 关联调试桥（仅需脚本开头调用一次）
+图灵.Adb_关联调试桥 (“d:\Program Files (x86)\dnplayer2\adb.exe”)
+' 在多设备时，可以切换序号
+输出调试文本 (图灵.Adb_查看设备名称 (1))
+' 截屏(全屏参数：0,0,0,0)
+图灵.Adb_获取设备屏幕像素 (0, 0, 500, 300)
+' 图像预览
+图灵.来源_像素数据预览 ()
+</pre></div></td></tr>
+
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

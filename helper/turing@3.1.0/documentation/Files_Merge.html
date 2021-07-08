@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="Files_Merge" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">Files_Merge 多个文件合并</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>多个文件进行合并为一个文件
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">ret = TURING.Files_Merge(FilesPath, SaveFile)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+FilesPath：字符串型，多个文件路径（可以不同的文件路径，多文件用竖线|分隔）<br>
+SaveFile：字符串型，保存文件路径（后缀名任意！）</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>ret：布尔型，是否成功（失败：False）</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("Files_Merge1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='Files_Merge1'>
+多个文件 = "C:\logo.png|图.bmp|D:\12.bmp"'不指定盘符时，用前面的
+合并文件 = "C:\合并文件.tlm" '可任意后缀名
+释放路径 = "C:\拆分文件夹"
+'合并
+TracePrint TURING.Files_Merge(多个文件, 合并文件)
+'拆分
+TracePrint TURING.Files_Split(合并文件, 释放路径)
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="BezierCurve" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">BezierCurve 贝塞尔曲线</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>生成贝塞尔曲线轨迹数据
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">Pos = TURING.BezierCurve(coordinates,stepping)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+coordinates：字符串型，坐标节点(格式："x坐标,y坐标|x坐标,y坐标|…")<br>
+stepping：小数型，步进</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>Pos：字符串型，曲线上所有坐标（格式：x坐标,y坐标-x坐标,y坐标…）</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("BezierCurve1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='BezierCurve1'>
+Dim 节点(3)
+节点(0) = "30,60"
+节点(1) = "250,30"
+节点(2) = "550,30"
+节点(3) = "600,60"
+步进 = 0.02
+'得到贝塞尔曲线轨迹
+数据 = TURING.BezierCurve(Join(节点, "|"), 步进)
+'创建画面（演示）
+Call TURING.Draw_CreateCanvas(650, 100)
+轨迹 = Split(数据, "-")
+For i = 0 To UBound(轨迹)
+    坐标 = Split(轨迹(i), ",")
+    x = Clng(坐标(0))
+    y = Clng(坐标(1))
+    '绘制坐标（演示）
+    Call TURING.Draw_Circle(x, y, 3, 255, 0, 0, True, 50)
+Next
+'图像显示（演示）
+Call TURING.Pixel_Preview()
+</pre></div></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>《我的眼睛--图灵识别》命令帮助</title>
+    <link href="css.css" rel="stylesheet" rev="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+<a name="RunVBScript" style="display:none"></a>
+<table><tr><td class="tab_left" valign="top">命令名称</td>
+        <td><span class="blue">RunVBScript 运行VBS脚本</span></td></tr>
+        <tr><td class="tab_left" valign="top">命令功能</td>
+        <td>运行VBS脚本命令内容
+        </td></tr>
+        <tr><td class="tab_left" valign="top">语法格式</td>
+        <td ><span class="blue">ret = TURING.RunVBScript(sText,Items)</span></td></tr>
+        <tr><td class="tab_left" valign="top">参数说明</td>
+        <td>
+sText：字符串型，脚本命令内容/或者vbs脚本文件<br>
+Items：变体型，可选，指定函数的参数值（可以设置16个哦，每个参数用逗号隔开）</td></tr>
+        <tr><td class="tab_left" valign="top">返回值</td>
+        <td>ret：字符串型，执行结果</td></tr>
+        <tr><td class="tab_left" valign="top">按键精灵</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("RunVBScript1")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='RunVBScript1'>
+'写法1：(普通语句)
+'注意：单引号需用双引号进行转义
+脚本内容 = "MsgBox ""我是VBS脚本内容的提示！"", 64, ""我是标题"""
+Call TURING.RunVBScript(脚本内容)
+'写法2：(普通语句)
+脚本内容 = "For i = 1 To 100" & vbCrLf
+脚本内容 = 脚本内容 & "a = a + 1" & vbCrLf
+脚本内容 = 脚本内容 & "Next" & vbCrLf
+脚本内容 = 脚本内容 & "MsgBox ""计算结果："" & a, 48, ""警告"""
+Call TURING.RunVBScript(脚本内容)
+'写法3：（函数语句内容）
+脚本内容 = "Function ShowTime(i,n)" & vbCrLf
+脚本内容 = 脚本内容 & "MsgBox ""你是："" & i+n" & vbCrLf
+脚本内容 = 脚本内容 & "ShowTime = Now" & vbCrLf
+脚本内容 = 脚本内容 & "End Function"
+参数1 = 100
+参数2 = 150
+TracePrint TURING.RunVBScript(脚本内容, 参数1, 参数2)
+'写法4：(脚本文件内容)
+'加载脚本文件进行运行
+Call TURING.RunVBScript("C:\图灵.tls")
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">易语言</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("RunVBScript2")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='RunVBScript2'>
+.版本 2
+
+.子程序 子程序1
+.局部变量 图灵, 类_TURING
+.局部变量 返回值, 文本型
+.局部变量 脚本内容, 文本型
+.局部变量 参数1, 变体型
+.局部变量 参数2, 变体型
+
+图灵.创建对象 ()
+' 写法1：(普通语句)
+脚本内容 ＝ “MsgBox ” ＋ #引号 ＋ “我只是一个普通的文本提示啊！” ＋ #引号
+返回值 ＝ 图灵.引擎_运行VBS脚本 (脚本内容)
+输出调试文本 (“识别结果1：” ＋ 到文本 (返回值))
+
+' 写法2：（函数语句内容）
+脚本内容 ＝ “Function ShowTime(i,n)” ＋ #换行符
+脚本内容 ＝ 脚本内容 ＋ “MsgBox ” ＋ #引号 ＋ “你是：” ＋ #引号
+脚本内容 ＝ 脚本内容 ＋ “ & i+n” ＋ #换行符
+脚本内容 ＝ 脚本内容 ＋ “ShowTime = Now” ＋ #换行符
+脚本内容 ＝ 脚本内容 ＋ “End Function”
+参数1.赋值 (100, )
+参数2.赋值 (150, )
+返回值 ＝ 图灵.引擎_运行VBS脚本 (脚本内容, 参数1, 参数2)
+输出调试文本 (“识别结果2：” ＋ 到文本 (返回值))
+
+' 写法3：(脚本文件内容)
+返回值 ＝ 图灵.引擎_运行VBS脚本 (“C:\图灵.tls”)
+输出调试文本 (“识别结果3：” ＋ 到文本 (返回值))
+</pre></div></td></tr>
+        <tr><td class="tab_left" valign="top">UiBot</td>
+        <td><div class="dp-highlighter">
+        <a class='copy' href='javascript:void(0)' onclick='copycode("RunVBScript3")'>复制代码</a>
+        <Pre class='prettyprint lang-ql linenums' id='RunVBScript3'>
+Import TURING
+dim 脚本内容
+TracePrint TURING.Version()
+
+'写法1：(普通语句)
+'注意：单引号需用\进行转义
+脚本内容 = "MsgBox \"我是VBS脚本内容的提示！\", 64, \"我是标题\""
+TURING.RunVBScript(脚本内容)
+
+'写法2：（函数语句内容）
+脚本内容 = "Function ShowTime(i,n)" & "\r\n"
+脚本内容 = 脚本内容 & "MsgBox \"你是：\" & i+n" & "\r\n"
+脚本内容 = 脚本内容 & "ShowTime = Now" & "\r\n"
+脚本内容 = 脚本内容 & "End Function"
+dim 参数1 = 100
+dim 参数2 = 150
+TracePrint TURING.RunVBScript(脚本内容, 参数1, 参数2)
+
+'写法3：(普通语句)
+脚本内容 = "For i = 1 To 100" & "\r\n"
+脚本内容 = 脚本内容 & "a = a + 1" & "\r\n"
+脚本内容 = 脚本内容 & "Next" & "\r\n"
+脚本内容 = 脚本内容 & "MsgBox \"计算结果：\" & a, 48, \"警告\""
+TURING.RunVBScript(脚本内容)
+
+'写法4：(脚本文件内容)
+'加载脚本文件进行运行
+TURING.RunVBScript("C:\\图灵.tls")
+</pre></div></td></tr>
+
+
+        <tr><td class="tab_left" valign="top">脚本文件</td>
+        <td><img src="img/RunVBScript.PNG" /></td></tr>
+</table>
+
+
+
+</div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
