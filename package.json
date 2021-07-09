@@ -1,8 +1,11 @@
 {
   "name": "ts-turing",
   "version": "3.1.0",
-  "description": "Use turing.dll in javascript.",
+  "description": "Use Turing.dll in javascript.",
   "keywords": [
+    "robot",
+    "mouse",
+    "keyboard",
     "turing",
     "dll",
     "com",
@@ -12,15 +15,19 @@
   "typings": "dist/turing.d.ts",
   "scripts": {
     "watch": "tsc --watch",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "dependencies": {
-    "@types/node": "^16.0.0",
-    "node-watch": "^0.7.1",
     "winax": "1.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "node-watch": "^0.7.1"
   },
   "author": "王羽彪 <1443837536@qq.com>",
   "license": "ISC",
-  "repository": "https://github.com/nanchengjiumeng/turing-ts.git"
+  "repository": "https://github.com/nanchengjiumeng/turing-ts.git",
+  "os": [
+    "win32"
+  ]
 }
