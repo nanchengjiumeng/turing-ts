@@ -1,8 +1,10 @@
-import create from '../dist/index'
-import { Turing } from '../typings/turing';
+import { Turing } from "../types/turing"
 
-const TURING: Turing = create()
+const turing = require('../dist/turing')
+
+const TURING: Turing = turing.createTuring()
 
 
 TURING.Pixel_FromScreen(0, 0, 200, 100)
 TURING.Pixel_Preview()
+

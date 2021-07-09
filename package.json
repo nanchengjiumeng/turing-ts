@@ -8,8 +8,8 @@
     "com",
     "typescript"
   ],
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/turing.ts",
+  "typings": "dist/turing.d.ts",
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc",
