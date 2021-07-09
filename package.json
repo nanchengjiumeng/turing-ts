@@ -9,7 +9,7 @@
     "typescript"
   ],
   "main": "dist/index.js",
-  "typings": "dist/types/index.d.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc",
@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@types/node": "^16.0.0",
-    "node-watch": "^0.7.1"
+    "node-watch": "^0.7.1",
+    "winax": "1.18.0"
   },
   "author": "王羽彪 <1443837536@qq.com>",
   "license": "ISC",
