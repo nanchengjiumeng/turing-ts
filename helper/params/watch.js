@@ -7,8 +7,9 @@
  * @FilePath: /ts-turing/helper/params/watch.js
  */
 var watch = require('node-watch');
+var path = require('path')
 var { execSync } = require('child_process')
-
-watch('./params.js', {}, () => {
-	console.log(execSync('node ./params.js').toString())
+var _p = path.resolve(__dirname, './params.js')
+watch(_p, {}, () => {
+	console.log(execSync('node ' + _p).toString())
 })

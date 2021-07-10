@@ -21,5 +21,31 @@ export default interface 加载字库 {
 	 * @param Text：字符串型，可选，设置字库内容，默认含有3500个汉字和英文数字符号。
 	 * @returns num：整数型，字库的数量
 	*/
-	Lib_Create(Font: string, Size: number, Text?: string): number
+	Lib_Create(Font: string, Size: number, Text?: string): number;
+	/**
+	 * 添加新的识别字库数据到指定编号
+	 * @param Serial：整数型，可选，字库编号（默认1，上限20）
+	 * @returns 
+	*/
+	Lib_Add(Serial?: number): void;
+	/**
+	 * 使用指定编号的识别字库数据
+	 * @param Serial：整数型，可选，字库编号（默认1，上限20）
+	 * @returns 
+	*/
+	Lib_Use(Serial?: number): void;
+	/**
+	 * 对当前识别字库数据进行追加
+	 * @param Serial：整数型，可选，字库编号（默认1，上限20）
+	 * @returns Num：整数型，字库数量（下标）
+	*/
+	Lib_AddData(Serial?: number): number;
+	/**
+		* 对当前识别字库数据进行追加
+		* @param Serial：整数型，可选，字库编号（默认1，上限20）
+		* @returns Num：整数型，字库数量（下标）
+	 */
+	Lib_AddData(Serial?: number): number;
+
+
 }
