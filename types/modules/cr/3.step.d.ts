@@ -1,4 +1,4 @@
-import { CharData, CharNum, Position } from "../basic";
+import { CharData } from "../basic";
 
 /** 文字识别（主打）步骤三 字符切割 */
 export default interface 字符切割 {
@@ -63,11 +63,11 @@ export default interface 字符切割 {
 	/**
 	 * 对切割的字符像素数据进行显示查看
 	 * @param index index：整数型，切割字符索引号
-	 * @returns { Position } [点击图像位置的坐标，格式：x,y]
+	 * @returns { string } [点击图像位置的坐标，格式：x,y]
 													x：返回图像上点击位置的X坐标
 													y：返回图像上点击位置的Y坐标
 	 */
-	Incise_Preview(index: number): Position;
+	Incise_Preview(index: number): string;
 
 	// 切割字符修正处理
 	/**
@@ -76,7 +76,7 @@ export default interface 字符切割 {
 	 * @param Height：字符串型，可选，保留字符切割高度范围（例："30-100"）。
 	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
-	Incise_AutoCharData(Width?: string, Height?: string): CharNum;
+	Incise_AutoCharData(Width?: string, Height?: string): number;
 	/**
 	 * 对切割的字符像素数据进行旋转纠正处理(使用白点占比最大的方法)
 	 * @param angle：整数型，旋转的正负度数值（范围：1~90）
@@ -98,9 +98,9 @@ export default interface 字符切割 {
 	/**
 	 * 获取切割字符的数据结构信息
 	 * @param Mode：整数型，默认0:全部数据，1:左,上，2:左,上,宽,高，3:宽,高,点阵
-	 * @returns {CharData}
+	 * @returns  字符串型，字符切割数据信息，格式：左,上,宽,高,点阵|左,上,宽,高,点阵|…）
 	 */
-	Incise_GetCharData(Mode: number): CharData;
+	Incise_GetCharData(Mode: number): string;
 	/**
 	 * 修改图像中切割的字符数据
 	 * @param Index：整数型，切割字符数据对应的索引号
@@ -116,16 +116,16 @@ export default interface 字符切割 {
 	 * 追加图像数据为切割字符数据
 	 * @param Left：整数型，可选，设置左边坐标（默认0）
 	 * @param Top：整数型，可选，设置顶上坐标（默认0）
-	 * @returns {CharNum}
+	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
-	Incise_AddCharData(Left: number, Top: number): CharNum;
+	Incise_AddCharData(Left: number, Top: number): number;
 	/**
 	 * 对切割的两个字符像素数据进行合并处理
 	 * @param index1：整数型，切割字符索引号1
 	 * @param index2：整数型，切割字符索引号2（合并后删除此字符图像）
-	 * @returns {CharNum}
+	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
-	Incise_JoinCharData(index1: number, index2: number): CharNum;
+	Incise_JoinCharData(index1: number, index2: number): number;
 
 	// 目标区域定位
 	/**
@@ -136,7 +136,7 @@ export default interface 字符切割 {
 	 * @param Height：字符串型，可选，保留字符切割高度范围（例："30-100"）。 
 	 * @param Flag：整数型，可选，排序规则（默认0书写顺序，1从左到右）
 	 */
-	Locate_TargetArea(Row: number, Column: number, Width?: string, Height?: string, Flag?: number): CharNum;
+	Locate_TargetArea(Row: number, Column: number, Width?: string, Height?: string, Flag?: number): number;
 	/**
 	 * 获取目标定位区域信息（需配合：目标检测定位）
 	 * @param Model：整数型，可选，模式（默认0全部数据，1:左,上，2:宽,高）

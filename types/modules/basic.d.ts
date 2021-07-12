@@ -8,10 +8,3 @@ export type Version = string;
 	后台键鼠模式"km"。
 */
 export type mode = 'normal' | 'window' | 'gdi' | 'aero' | 'km';
-export type WindowSize = string; // 左,上,右,下
-export type Position = string; // x,y
-export type ImageDataString = string; // 宽|高|图像数据(b,g,r,a,b,g,r,a,…)
-export type ImageSize = string; // 宽,高
-export type hwnd = number; // 整数型，窗口句柄(窗口不能最小化)
-export type CharNum = number // 整数型，字符切割数量(最大下标值)
-export type CharData = string // 字符串型，字符切割数据信息，格式：左,上,宽,高,点阵|左,上,宽,高,点阵|…）

@@ -1,5 +1,3 @@
-import { ImageDataString, ImageSize, Position } from "../basic";
-
 /** 文字识别（主打）步骤一 文字识别 */
 export default interface 文字识别 {
 	/**
@@ -29,14 +27,20 @@ export default interface 文字识别 {
 	 * @param Width 整数型，可选，宽度（默认32）
 	 * @param Height 整数型，可选，高度（默认32）
 	 * @param model 整数型，可选，模式(默认0鼠标图案，1为鼠标位置的屏幕图像)
-	 */
-	Pixel_FromMouse(Width: number, Height: number, model?: number): Position;
+	 * @returns [字符串型，hot热点（格式：x坐标,y坐标）]
+		 x：热点x坐标
+		 y：热点y坐标
+	*/
+	Pixel_FromMouse(Width?: number, Height?: number, model?: number): string;
 	/**
 	 * 对获取的图像像素数据进行显示查看
 	 * @param Mode 整数型，可选，模式：图像或直方图（默认0图像,1垂直直方图,2水平直方图）
 	 * @param subLine 布尔型，可选，默认False（True显示十字辅助线）
+	 * @returns [点击图像位置的坐标，格式：x,y]
+		 x：返回图像上点击位置的X坐标<br>
+		 y：返回图像上点击位置的Y坐标
 	 */
-	Pixel_Preview(Mode?: number, subLine?: boolean): Position;
+	Pixel_Preview(Mode?: number, subline?: boolean): string;
 	// 配置图像数据
 	/**
 	 * 将内部的图像数据保存为.bmp图片文件
@@ -59,15 +63,20 @@ export default interface 文字识别 {
 	/**
 	 * 得到内部的图像像素数据，用于二次开发
 	 * @param value 整数型，可选，模式（默认0:宽|高|图像数据，1:宽|高，2:全部设置到剪切板）
-	 * @returns {ImageInfo}
-	 */
-	GetImageData(value?: number): ImageDataString;
+	 * @returns [图像像素数据，字符串型格式：宽|高|图像数据(b,g,r,a,b,g,r,a,…)]
+		 width：字符串型，图像宽度<br>
+		 height：字符串型，图像高度<br>
+		 ImageData：字符串型，图像数据
+ */
+	GetImageData(value?: number): string;
 	/**
 	 * 获取指定图片的宽度和高度
 	 * @param FilePath 字符串型，图片文件的路径(支持：bmp、png、jpg、gif格式)
-	 * @returns {ImageSize}
+	 * @returns [图片大小，格式：宽,高]
+		 w：图片宽度值<br>
+		 h：图片高度值
 	 */
-	GetImageSize(FilePath: string): ImageSize;
+	GetImageSize(FilePath: string): string;
 	/**
 	 * 获取Gif图片帧数
 	 * @param FilePath 字符串型，GIF图片文件的路径(支持：gif格式)

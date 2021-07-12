@@ -1,10 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 
-const filename = path.resolve(__dirname, process.argv[2])
-const str = fs.readFileSync(filename, {
-	'encoding': 'utf-8'
-})
 
 
 function getTds(tagTr) {
@@ -17,21 +13,38 @@ function getTds(tagTr) {
 
 
 function parseParam(str) {
-	const match = str.match(/([^：]+)：(.+)，/)
-	return {
-		name: match[1],
-		typeZh: match[2],
-		type: match[2].includes('整数') ? 'number' : 'void',
-		s: str.includes('可选') // 可选
+	if (str.includes('无')) {
+		return {
+			name: '无',
+			typeZh: '空',
+			type: 'void',
+			s: false // 可选
+		}
 	}
+	const match = str.match(/([^：]+)：(.+)，/)
+	if (match) {
+		return {
+			name: match[1],
+			typeZh: match[2],
+			type: match[2].includes('整数') ? 'number' : match[2].includes('字符串') ? 'string' : match[2].includes('布尔') ? 'boolean' : '1231231221312',
+			s: str.includes('可选') // 可选
+		}
+	} else {
+		return {
+			name: str,
+			typeZh: '字符串型',
+			type: 'string'
+		}
+	}
+
 }
 
 function params(s) {
 	const ps = []
-	const c = s.split(`\n`).map((sub, index) => {
+	const c = s.split(`\n`).filter((s) => s !== '').map((sub, index) => {
 		ps.push(parseParam(sub))
 		return `* @param ${sub.replace('/t', '')}`
-	}).filter((s) => s !== '').join(`\n`)
+	}).join(`\n`)
 	return {
 		c,
 		ps
@@ -61,6 +74,38 @@ function getCom(str) {
 ${formatYfgs(yfgs, paramsType.ps)}: ${fhzType.type};
 `
 }
-console.log(getCom(str))
 
+
+function readDocProductDTS(name) {
+	const filename = path.resolve(__dirname, '../turing@3.1.0/documentation/' + name)
+	const str = fs.readFileSync(filename, {
+		'encoding': 'utf-8'
+	})
+	return getCom(str)
+
+}
+
+const files = fs.readdirSync(path.resolve(__dirname, '../turing@3.1.0/documentation'))
+	.filter(p => p.match('.html'))
+	.filter(p => !p.includes('Index-Created-By-Easy-CHM')
+		&& !p.includes('New')
+		&& !p.includes('index')
+		&& !p.includes('About')
+		&& !p.includes('免责声')
+		&& !p.includes('安卓键码表')
+	)
+
+
+
+const fd = fs.openSync('./TEST.d.ts', 'a+')
+fs.writeSync(fd, 'interface a {\n')
+files.forEach((fileName) => {
+	try {
+		fs.writeSync(fd, readDocProductDTS(fileName))
+
+	} catch (e) {
+		console.log(fileName)
+	}
+})
+fs.writeSync(fd, '}')
 
