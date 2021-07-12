@@ -3,6 +3,7 @@
  * @description 图灵插件，nodejs插件
  */
 /// <reference path="../types/winax.d.ts"/>
+export * as KeyCode from './Keycode'
 const { execSync } = require('child_process');
 import winax = require('winax');
 import * as path from 'path'

@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createTuring = exports.createDllBridge = void 0;
+exports.createTuring = exports.createDllBridge = exports.KeyCode = void 0;
 /**
  * @author 王羽彪
  * @description 图灵插件，nodejs插件
  */
 /// <reference path="../types/winax.d.ts"/>
+exports.KeyCode = require("./Keycode");
 const { execSync } = require('child_process');
 const winax = require("winax");
 const path = require("path");
