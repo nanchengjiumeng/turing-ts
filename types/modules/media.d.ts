@@ -1,4 +1,5 @@
-export interface Media {
+/** 多媒体（语音 ）*/
+export default interface 多媒体 {
 	/**
 		* 获取播放时间长度(单位：毫秒)
 		* @param 无

@@ -1,5 +1,5 @@
 /** 绘画图形（特效）*/
-export interface Draw {
+export default interface 绘画图形 {
 	/**
 		* 在内部的图像数据上画一个箭头
 		* @param x1：整数型，起点X坐标

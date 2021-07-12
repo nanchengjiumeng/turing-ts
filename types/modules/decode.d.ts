@@ -1,5 +1,5 @@
 /** 加密解密（编码）*/
-export interface DeCode {
+export default interface 加密解密 {
 	/**
 		* 二进制转十六进制字符串
 		* @param BinStr：字符串型，二进制字符串内容

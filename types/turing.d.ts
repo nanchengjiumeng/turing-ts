@@ -1,12 +1,12 @@
-import { Algorithm_ } from './modules/alg.d';
-import { Sys } from './modules/sys.d';
-import { DeCode } from './modules/decode.d';
-import { Media } from './media.d';
-import { UI } from './modules/ui.d';
-import { Screen_ } from './modules/screen.d';
-import { Draw } from './modules/draw.d';
-import { CF } from './modules/cf.d';
-import { Files } from './modules/files';
+import Algorithm_ from './modules/alg.d';
+import Sys from './modules/sys.d';
+import DeCode from './modules/decode.d';
+import Media from './modules/media';
+import UI from './modules/ui.d';
+import Screen_ from './modules/screen.d';
+import Draw from './modules/draw.d';
+import CF from './modules/cf.d';
+import Files from './modules/files';
 import CR from './modules/cr/cr.d';
 import Hwnd from './modules/hwnd.d'
 export interface Turing extends

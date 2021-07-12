@@ -1,5 +1,5 @@
 /** 系统信息（设备）*/
-export interface Sys {
+export default interface 系统信息 {
 	/**
 		* 获取系统从开机到现在所经过的时间
 		* @param 无

@@ -1,6 +1,9 @@
-import turing = require('../../dist/turing')
+import turing = require('../../src/turing')
 
 const TURING = turing.createTuring()
 
 
-console.log(TURING.Version);
+const version = TURING.Version()
+
+console.log(version);
+

@@ -1,6 +1,6 @@
 /** 窗口句柄  */
 import { mode } from './basic'
-export default interface Hwnd {
+export default interface 窗口句柄 {
 	/**
 		* 关联指定的窗口句柄
 		* @param hwnd：整数型，窗口句柄(窗口不能最小化)

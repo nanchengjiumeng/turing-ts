@@ -1,5 +1,5 @@
 /** 屏幕打印（预览）*/
-export interface Screen_ {
+export default interface 屏幕打印 {
 	/**
 		* 直接在屏幕上打印图像像素数据
 		* @param x：整数型，可选，屏幕X坐标(默认0)

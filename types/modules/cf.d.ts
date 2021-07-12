@@ -1,4 +1,5 @@
-export interface CF {
+/** 图色查找（优秀）*/
+export default interface 图色查找 {
 	/**
 		* 得到屏幕指定位置点的颜色
 		* @param x：整数型，屏幕X坐标
@@ -50,7 +51,7 @@ export interface CF {
 		* @param color：字符串型，16进制首个颜色值(支持偏色,格式:BBGGR-DBDGDR）)<br>
 		* @param offsetColorS：字符串型，偏移颜色串(支持偏色,格式:DX|DY|BBGGR-DBDGDR)<br>
 		* @param similarity：整数型型，颜色相似度（范围：0.1~1.0）
-		* @returns [坐标，格式：x,y]
+		* @returns {string} [坐标，格式：x,y]
 			x：返回首个颜色的屏幕X坐标<br>
 			y：返回首个颜色的屏幕Y坐标
 	*/
@@ -86,8 +87,8 @@ export interface CF {
 		* @param top：整数型，屏幕左上角Y坐标<br>
 		* @param right：整数型，屏幕右下角X坐标<br>
 		* @param bottom：整数型，屏幕右下角Y坐标<br>
-		* @param ImagePathS：字符串型，需要查找的图片路径，多图用竖线|分隔<br>
-		* @param similarity：整数型，颜色相似度（范围：0.1~1）/字符串型,颜色偏色值（范围：000000~FFFFFF）
+		* @param ImagePathS：字符串型，需要查找的图片路径，多图用竖线|分隔
+		* @param similarity：整数型，颜色相似度（范围：0.1~1）字符串型,颜色偏色值（范围：000000~FFFFFF）
 		* @returns [坐标，格式：id,x,y]
 			id：图片标识号，从0开始<br>
 			x：返回屏幕X坐标<br>
@@ -100,8 +101,8 @@ export interface CF {
 		* @param top：整数型，屏幕左上角Y坐标<br>
 		* @param right：整数型，屏幕右下角X坐标<br>
 		* @param bottom：整数型，屏幕右下角Y坐标<br>
-		* @param ImagePathS：字符串型，需要查找的图片路径，多图用竖线|分隔<br>
-		* @param similarity：整数型，颜色相似度（范围：0.1~1）/字符串型,颜色偏色值（范围：000000~FFFFFF）
+		* @param ImagePathS：字符串型，需要查找的图片路径，多图用竖线|分隔
+		* @param similarity：整数型，颜色相似度（范围：0.1~1） 字符串型,颜色偏色值（范围：000000~FFFFFF）
 		* @returns [坐标，格式：id,x,y|id,x,y|…]
 			idxyS：返回屏幕多个坐标（格式：id图片标识,x坐标,y坐标|id图片标识,x坐标,y坐标|…）
 	 */

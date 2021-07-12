@@ -1,4 +1,5 @@
-export interface UI {
+/** 用户交互（界面） */
+export default interface 用户交互 {
 	/**
 		* 在屏幕上按住鼠标左键框选区域（及宽高）
 		* @param 无

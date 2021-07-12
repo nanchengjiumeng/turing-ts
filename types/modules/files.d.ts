@@ -1,5 +1,5 @@
 /** 文本文件（内容）*/
-export interface Files {
+export default interface 文本文件 {
 	/**
 		* 对多张图片合成GIF文件
 		* @param LoadName：字符串型，加载多张图片（jpg,bmp,png），但必须是同尺寸文件（格式：图片1|图片2|…）
