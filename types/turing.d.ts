@@ -9,6 +9,7 @@ import CF from './modules/cf.d';
 import Files from './modules/files';
 import CR from './modules/cr/cr.d';
 import Hwnd from './modules/hwnd.d'
+import KM from './modules/km.d'
 export interface Turing extends
 	Hwnd,
 	CR,
@@ -20,6 +21,7 @@ export interface Turing extends
 	Media,
 	Algorithm_,
 	DeCode,
+	KM,
 	Sys {
 	/**
 	 * 获取当前已注册的插件完整路径

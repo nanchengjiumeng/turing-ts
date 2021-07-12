@@ -1,0 +1,18 @@
+//图灵插件文件添加到工程的“rc”资源目录中
+
+变量 Ret = 是否注册("TURING.FISR")
+如果(Ret)
+    调试输出("插件已注册!")
+否则
+    注册插件(获取资源路径("rc:TURING.dll"),真)
+结束
+变量 TURING = 插件("TURING.FISR")
+TURING.Pixel_FromScreen(2,0,799,572)
+TURING.Filter_Binaryzation("255-255")
+TURING.Filter_Binaryzation("255-255")
+TURING.Incise_FixedLocation(0,0,105,25,105,1)
+//识别字库路径可自行更换！！！
+TURING.Lib_Load(获取资源路径("rc:识别库.lib"))
+识别结果 = TURING.OCR(85)
+调试输出(识别结果)
+

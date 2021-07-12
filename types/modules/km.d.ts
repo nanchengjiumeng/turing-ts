@@ -1,5 +1,5 @@
 /** 键鼠模拟（备胎） */
-export interface KM {
+export default interface KM {
 	/**
 		* 脚本暂停执行一段时间
 		* @param mSec：整数型，毫秒数（1秒=1000毫秒）

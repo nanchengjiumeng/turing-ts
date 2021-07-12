@@ -38,7 +38,7 @@ export default interface 字符切割 {
 	 * @param Flag Flag：整数型，可选，排序规则（默认0书写顺序，1从左到右，2换行功能）
 	 * @returns 整数型，字符切割数量(最大下标值)
 	 */
-	Incise_ScopeAisle(Row: number, Column: number, Width: string, Height: string, Flag: number): number;
+	Incise_ScopeAisle(Row: number, Column: number, Width?: string, Height?: string, Flag?: number): number;
 	/**
 	 * 颜色分层字符切割（体验版--组合式）
 	 * @param interval interval：整数型，颜色值之间的距离

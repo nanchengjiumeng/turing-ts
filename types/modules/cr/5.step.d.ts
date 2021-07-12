@@ -7,7 +7,7 @@ export default interface 识别对比 {
 		* @param Interval：整数型，可选，字符之间的间隔（默认0），Model为2或3时才生效
 		* @returns text：字符串型，识别得到的文字内容
 	 */
-	OCR(Similar: number, Model: number, Interval?: number): string;
+	OCR(Similar: number, Model?: number, Interval?: number): string;
 	/**
 		* 进行图像文字识别（对拆分的文字识别，效率比较慢）
 		* @param Similar：整数型，点数匹配相似度（范围0~100，默认0匹配最高的相似）
@@ -24,5 +24,5 @@ export default interface 识别对比 {
 	* @returns [坐标，格式：x,y|x,y|…]
 		XY：字符串型，查找到的屏幕多个坐标（格式：x坐标,y坐标|x坐标,y坐标|…），失败-1,-1
  */
-	FindText(Text: string, Similar: number, Mode: number): string;
+	FindText(Text: string, Similar?: number, Mode?: number): string;
 }
