@@ -1,5 +1,5 @@
 /** 数学统计（算法）*/
-export interface Algorithm {
+export interface Algorithm_ {
 	/**
 		* 计算图像中颜色最小的区域范围
 		* @param 无

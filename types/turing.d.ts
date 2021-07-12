@@ -1,3 +1,4 @@
+import { Algorithm_ } from './modules/alg.d';
 import { Sys } from './modules/sys.d';
 import { DeCode } from './modules/decode.d';
 import { Media } from './media.d';
@@ -17,7 +18,7 @@ export interface Turing extends
 	Files,
 	UI,
 	Media,
-	Algorithm,
+	Algorithm_,
 	DeCode,
 	Sys {
 	/**
