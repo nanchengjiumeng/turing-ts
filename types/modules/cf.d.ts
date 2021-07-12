@@ -25,7 +25,7 @@ export interface CF {
 		* @param similarity：整数型，颜色相似度（范围：0.1~1）
 		* @returns  [坐标，格式：x,y|x,y|…] xyS：返回屏幕多个坐标（格式：x坐标,y坐标|x坐标,y坐标|…）
 	 */
-	FindColorExS(left, top, right, bottom, colorS, direction, similarity): string;
+	FindColorExS(left: number, top: number, right: number, bottom: number, colorS: string, direction: number, similarity: number): string;
 	/**
 		* 屏幕区域内查找指定大小并且符合颜色串点数量的色块
 		* @param left：整数型，屏幕左上角X坐标

@@ -179,7 +179,6 @@ export declare const KEYCODE_DVR: number;
 export declare const KEYCODE_ENVELOPE: number;
 export declare const KEYCODE_EXPLORER: number;
 export declare const KEYCODE_FORWARD: number;
-export declare const KEYCODE_FORWARD_DEL: number;
 export declare const KEYCODE_FUNCTION: number;
 export declare const KEYCODE_GUIDE: number;
 export declare const KEYCODE_HEADSETHOOK: number;

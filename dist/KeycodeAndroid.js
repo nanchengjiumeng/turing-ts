@@ -191,7 +191,7 @@ exports.KEYCODE_PAGE_UP = 92;
 exports.KEYCODE_PAGE_DOWN = 93;
 // 退格键          
 exports.KEYCODE_DEL = 67;
-// 删除键          
+// 删除键 按键Forward Delete  
 exports.KEYCODE_FORWARD_DEL = 112;
 // 插入键          
 exports.KEYCODE_INSERT = 124;
@@ -367,8 +367,6 @@ exports.KEYCODE_ENVELOPE = 65;
 exports.KEYCODE_EXPLORER = 64;
 // 按键Forward                      
 exports.KEYCODE_FORWARD = 125;
-// 按键Forward Delete               
-exports.KEYCODE_FORWARD_DEL = 112;
 // 按键Function modifier            
 exports.KEYCODE_FUNCTION = 119;
 // 按键Guide                        

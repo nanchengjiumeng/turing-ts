@@ -46,13 +46,13 @@ export interface Media {
 		* @param Pos:整数型，播放进度（单位：毫秒）
 		* @returns 无
 	 */
-	Media_SetMusicPos(Pos): void;
+	Media_SetMusicPos(Pos: number): void;
 	/**
 		* 设置声音大小
 		* @param Volume:整数型，音量（最大值：100）
 		* @returns 无
 	 */
-	Media_SetVolume(Volume): void;
+	Media_SetVolume(Volume: number): void;
 	/**
 		* 停止音乐播放
 		* @param 无

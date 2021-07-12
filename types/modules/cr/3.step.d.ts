@@ -1,5 +1,3 @@
-import { CharData } from "../basic";
-
 /** 文字识别（主打）步骤三 字符切割 */
 export default interface 字符切割 {
 	/**

@@ -190,7 +190,7 @@ export const KEYCODE_PAGE_UP: number = 92;
 export const KEYCODE_PAGE_DOWN: number = 93;
 // 退格键          
 export const KEYCODE_DEL: number = 67;
-// 删除键          
+// 删除键 按键Forward Delete  
 export const KEYCODE_FORWARD_DEL: number = 112;
 // 插入键          
 export const KEYCODE_INSERT: number = 124;
@@ -378,8 +378,6 @@ export const KEYCODE_ENVELOPE: number = 65;
 export const KEYCODE_EXPLORER: number = 64;
 // 按键Forward                      
 export const KEYCODE_FORWARD: number = 125;
-// 按键Forward Delete               
-export const KEYCODE_FORWARD_DEL: number = 112;
 // 按键Function modifier            
 export const KEYCODE_FUNCTION: number = 119;
 // 按键Guide                        
