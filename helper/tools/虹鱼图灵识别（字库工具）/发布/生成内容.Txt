@@ -7,12 +7,6 @@
     注册插件(获取资源路径("rc:TURING.dll"),真)
 结束
 变量 TURING = 插件("TURING.FISR")
-TURING.Pixel_FromScreen(566,242,800,503)
-TURING.Filter_Posterization(6)
-TURING.Filter_Binaryzation("0-241")
-TURING.Incise_FixedLocation(118,73,22,22,13,1)
-//识别字库路径可自行更换！！！
-TURING.Lib_Load(获取资源路径("rc:识别库.lib"))
-识别结果 = TURING.OCR(85)
-调试输出(识别结果)
+TURING.Pixel_FromScreen(72,999,135,1020)
+TURING.Filter_Binaryzation("0-254")
 

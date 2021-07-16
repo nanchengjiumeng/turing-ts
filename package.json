@@ -11,7 +11,7 @@
     "com",
     "typescript"
   ],
-  "main": "dist/turing.ts",
+  "main": "dist/turing.js",
   "typings": "dist/turing.d.ts",
   "scripts": {
     "watch": "tsc --watch",
