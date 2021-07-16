@@ -1,32 +1,25 @@
-import path = require('path');
-import { createTuring } from "../../src/turing";
+import { TURING } from './t';
+import { findCharacterFootCenter, findQianJinInZHYD } from "./findObject";
+import * as KeyCodes from '@wordpress/keycodes'
+const h = TURING.Window_FindHwnd('地下城与勇士', '')
+console.log(h);
 
-const TURING = createTuring()
-
-// const hwnd = TURING.Window_FindHwnd("地下城与勇士", "")
-
-// TURING.Link(hwnd)
-
-// TURING.Window_MoveTo(0, 0)
-
-TURING.Lib_Create('宋体', 9)
-function findCharName() {
-	TURING.Pixel_FromScreen(0, 0, 800, 570)
-	TURING.Filter_Binaryzation("255-255")
-	TURING.Filter_Binaryzation("255-255")
-	TURING.Incise_FixedLocation(0, 0, 105, 25, 105, 1)
-	const ret = TURING.FindText("仗剑旧城梦", 100).split(',')
-	console.log({
-		x: ret[0],
-		y: ret[1]
-	});
-}
+TURING.Link(h, 'window')
 
 function wh() {
-	setTimeout(() => {
-		findCharName()
-		wh()
-	}, 500)
-}
+	const characterFootPosition = findCharacterFootCenter()
+	const qianJinPoistion = findQianJinInZHYD()
 
+
+	console.log('人物:', characterFootPosition);
+	console.log('前进:', qianJinPoistion);
+	if (qianJinPoistion.x > characterFootPosition.x) {
+		TURING.KM_KeyDown(96)
+		setTimeout(() => {
+			TURING.KM_KeyUp(96)
+			wh()
+		}, 1999)
+	}
+
+}
 wh()

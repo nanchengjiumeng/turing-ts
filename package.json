@@ -18,6 +18,7 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@wordpress/keycodes": "^3.1.1",
     "winax": "1.18.0"
   },
   "devDependencies": {
