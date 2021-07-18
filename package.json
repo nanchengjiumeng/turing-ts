@@ -1,6 +1,6 @@
 {
   "name": "ts-turing",
-  "version": "3.1.0",
+  "version": "3.1.0.1",
   "description": "Use Turing.dll in javascript.",
   "keywords": [
     "robot",
@@ -22,7 +22,7 @@
     "winax": "1.18.0"
   },
   "devDependencies": {
-    "@types/node": "^16.0.0",
+    "@types/node": "^16.3.2",
     "node-watch": "^0.7.1"
   },
   "author": "王羽彪 <1443837536@qq.com>",

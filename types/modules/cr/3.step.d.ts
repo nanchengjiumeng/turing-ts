@@ -20,7 +20,7 @@ export default interface 字符切割 {
 	 * @param Height 字符串型，可选，保留字符切割高度范围（例："30-100"）。
 	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
-	Incise_RandomOrientation(through: number, Width: number, Height: number): number;
+	Incise_RandomOrientation(through?: number, Width?: number, Height?: number): number;
 	/**
 	 * 连通区域字符切割
 	 * @param through 布尔型，是否八通方向（八向：True）
@@ -28,7 +28,7 @@ export default interface 字符切割 {
 	 * @param Height 字符串型，可选，保留字符切割高度范围（例："30-100"）。
 	 * @returns 整数型，字符切割数量(最大下标值)
 	 */
-	Incise_ConnectedArea(through: boolean, Width: string, Height: string): number;
+	Incise_ConnectedArea(through: boolean, Width?: string, Height?: string): number;
 	/**
 	 * 范围投影字符切割
 	 * @param Row   Row：整数型，行间隙（横向，最小值）
@@ -50,7 +50,7 @@ export default interface 字符切割 {
 	 * @param Column Column：整数型，可选，列间距（默认2）
 	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
-	Incise_ColorLayered(interval: number, num: number, Width: string, Height: string, Value: number, Row: number, Column: number): number;
+	Incise_ColorLayered(interval: number, num: number, Width?: string, Height?: string, Value?: number, Row?: number, Column?: number): number;
 	/**
 	 * 自适应矩形字符切割（体验版）
 	 * @param Width Width：字符串型，可选，保留字符切割宽度范围（例："50-150"）
@@ -116,7 +116,7 @@ export default interface 字符切割 {
 	 * @param Top：整数型，可选，设置顶上坐标（默认0）
 	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
-	Incise_AddCharData(Left: number, Top: number): number;
+	Incise_AddCharData(Left?: number, Top?: number): number;
 	/**
 	 * 对切割的两个字符像素数据进行合并处理
 	 * @param index1：整数型，切割字符索引号1

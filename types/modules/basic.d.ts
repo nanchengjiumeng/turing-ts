@@ -7,4 +7,4 @@ export type Version = string;
 	 Aero主题缩略图后台"aero"，
 	后台键鼠模式"km"。
 */
-export type mode = 'normal' | 'window' | 'gdi' | 'aero' | 'km';
+export type mode = 'normal' | 'window' | 'gdi' | 'aero' | 'km' | 'normal|km' | 'window|km' | 'gdi|km' | 'aero|km';
