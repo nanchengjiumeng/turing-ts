@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@wordpress/keycodes": "^3.1.1",
-    "winax": "1.18.0"
+    "winax": "^3.1.6"
   },
   "devDependencies": {
     "@types/node": "^16.3.2",
