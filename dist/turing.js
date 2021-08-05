@@ -20,7 +20,7 @@ function createDllBridge(dllPath) {
     }
 }
 exports.createDllBridge = createDllBridge;
-const dllPath = path.resolve(__dirname, '../../helper/turing@3.1.0/TURING/TURING.dll');
+const dllPath = path.resolve(__dirname, '../helper/turing@3.1.0/TURING/TURING.dll');
 function createTuring() {
     return createDllBridge(dllPath);
 }
