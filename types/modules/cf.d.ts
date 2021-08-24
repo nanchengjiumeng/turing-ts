@@ -8,12 +8,32 @@ export default interface 图色查找 {
 		* @returns color：字符串型，16进制颜色值
 	 */
 	GetPixelColor(x: number, y: number, mode: number): string;
+
 	/**
-		* 对二维多边形的图形进行识别（体验版）
-		* @param distance：整数型，两顶点之间的距离
-		* @param length：整数型，两顶点之间的线条长度
-		* @returns shape：字符串型，图形名称（三角形、多边形、矩形和圆形）
+	 * 获取圆形边上一个点颜色
+	 * @param x 整数型，圆心X坐标
+	 * @param y 整数型，圆心Y坐标
+	 * @param Radius 整数型，可选，默认0，圆的半径
+	 * @param Degree 整数型，可选，默认0，旋转度数（顺时针，指北0度！）
+	 * @param Model 整数型，取色模式（默认0：普通取色，1：增强取色（半透明窗体），2：取内部图像数据颜色）
+	 * @returns color：字符串型，16进制颜色值
 	 */
+	GetRoundPointColor(x: number, y: number, Radius?: number, Degree?: number, Model?: number): string;
+	/**
+	 * 获取圆形边上一个点坐标
+	 * @param x 整数型，圆心X坐标
+	 * @param y 整数型，圆心Y坐标
+	 * @param Radius 整数型，可选，默认0，圆的半径
+	 * @param Degree 整数型，可选，默认0，旋转度数（顺时针，指北0度！）
+	 * @returns [坐标，字符串型，格式：x,y] x：返回X坐标 y：返回Y坐标
+	 */
+	GetRoundPoint(x: number, y: number, Radius?: number, Degree?: number): string;
+	/**
+	* 对二维多边形的图形进行识别（体验版）
+	* @param distance：整数型，两顶点之间的距离
+	* @param length：整数型，两顶点之间的线条长度
+	* @returns shape：字符串型，图形名称（三角形、多边形、矩形和圆形）
+	*/
 	FindShape(distance: number, length: number): string;
 	/**
 		* 屏幕指定区域内查找多个颜色及多个坐标

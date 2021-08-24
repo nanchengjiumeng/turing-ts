@@ -180,4 +180,19 @@ export default interface 绘画图形 {
 		* @returns 无
 	 */
 	Draw_Text(x: number, y: number, Text: string, Mode?: string, R?: number, G?: number, B?: number): void;
+	/**
+	 * 在内部的图像数据上画在圆形边上一个点
+	 * @param x 整数型，圆心X坐标
+	 * @param y 整数型，圆心Y坐标
+	 * @param Radius 整数型，可选，默认0，圆的半径
+	 * @param Degree 整数型，可选，默认0，旋转度数（顺时针，指北0度！）
+	 * @param Size 整数型，可选，默认1，画点大小
+	 * @param R 整数型，可选，默认255，10进制红色分量值
+	 * @param G 整数型，可选，默认0，10进制绿色分量值
+	 * @param B 整数型，可选，默认0，10进制蓝色分量值
+	 * @param Full 布尔型，可选，默认False，填充实心为True
+	 * @param Alpha 可选，透明度（默认100不透明，需要填充实心才能生效）
+	 * @returns [x坐标,y坐标]：字符串型，返回画点的坐标
+	 */
+	Draw_RoundPoint(x: number, y: number, Radius?: number, Degree?: number, Size?: number, R?: number, G?: number, B?: number, Full?: boolean, Alpha?: number): string;
 }

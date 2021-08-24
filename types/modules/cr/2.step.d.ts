@@ -229,4 +229,35 @@ export default interface 滤镜处理 {
 	 * (通用图像处理)呈现一种暗调，对比度对比度明显的效果
 	 */
 	Filter_DarkColor(): void;
+	/**
+	 * (针对彩色图像处理)通道图层滤镜
+	 * @param model：整数型，RGB三原色（默认0:R,1:G,2:B,3:RG,4:GB,5:RB)
+	 */
+	Filter_ChannelLayer(model?: number): void;
+	/**
+	 * (通用图像处理)缩放自适应滤镜(内部最大缩放为2倍)
+	 * @param width 整数型，自适应宽度数值(内部最大缩放为2倍)
+	 * @param height 整数型，自适应高度数值(内部最大缩放为2倍)
+	 */
+	Filter_ZoomAdaptive(width: number, height: number): void;
+	/**
+	 * (通用图像处理)多张图片的颜色相似合并滤镜
+	 * @param iStart 整数型，开始编号，指定备份图像数据的编号
+	 * @param iEnd 整数型，结束编号，指定备份图像数据的编号
+	 */
+	Filter_SimilarMerge(iStart: number, iEnd: number): void;
+	/**
+	 * (通用图像处理)中值滤波滤镜
+	 * @param Value 整数型，可选，大小阈值（范围：1~3,默认：1）
+	 */
+	Filter_Median(Value?: number): void;
+	/**
+	 * (通用图像处理)哈哈镜/魔镜滤镜
+	 * @param CenterX 整数型，中心x坐标
+	 * @param CenterY 整数型，中心y坐标
+	 * @param Radius 整数型，半径
+	 * @param degree 小数型，仅设置挤压（凹陷）程度（默认4.5）
+	 * @param Model 布尔型，凹凸模式选择（默认True凸）
+	 */
+	Filter_MagicMirror(CenterX: number, CenterY: number, Radius?: number, degree?: number, Model?: boolean): void;
 }

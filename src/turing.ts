@@ -17,7 +17,8 @@ export function createDllBridge(dllPath: string): Turing {
 	}
 }
 
-const dllPath: string = path.resolve(__dirname, '../helper/turing@3.1.0/TURING/TURING.dll')
+// const dllPath: string = path.resolve(__dirname, '../helper/turing@3.1.0/TURING/TURING.dll')
+const dllPath: string = path.resolve(__dirname, '../dll/3.0.5.202100805/TURING.dll')
 export function createTuring(): Turing {
 	return createDllBridge(dllPath)
 }
