@@ -55,4 +55,16 @@ export default interface 加密解密 {
 		* @returns text：字符串型，文字内容
 		*/
 	Pass_Uncode(cipher: string, password: string): string;
+	/**
+	 * 字符串URL编码
+	 * @param text 字符串型，文字内容
+	 * @returns cipher：字符串型，加密的文字内容
+	 */
+	Url_Encode(text: string): string;
+	/**
+	 * 字符串URL解码
+	 * @param cipher 字符串型，加密的文字内容
+	 * @returns text：字符串型，文字内容
+	 */
+	Url_Decode(cipher: string): string;
 }

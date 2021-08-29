@@ -124,7 +124,12 @@ export default interface 字符切割 {
 	 * @returns CharNum：整数型，字符切割数量(最大下标值)
 	 */
 	Incise_JoinCharData(index1: number, index2: number): number;
-
+	/**
+	 * 对切割的字符像素数据进行自适应大小处理(内部最大缩放为2倍)
+	 * @param iWidth 自适应宽度值(内部最大缩放为2倍)
+	 * @param iHeight 自适应高度值(内部最大缩放为2倍)
+	 */
+	Incise_CharSizeAdaptive(iWidth: number, iHeight: number): void;
 	// 目标区域定位
 	/**
 	 * 目标检测区域定位（用法：同范围投影字符切割）
@@ -141,4 +146,5 @@ export default interface 字符切割 {
 	 * @returns Ret：字符串型，字符位置区域信息
 	 */
 	Locate_GetAreaInfo(Model?: number): string;
+
 }
