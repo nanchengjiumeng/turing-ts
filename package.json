@@ -1,6 +1,6 @@
 {
   "name": "ts-turing",
-  "version": "3.0.5",
+  "version": "3.1.0",
   "description": "Use Turing.dll in javascript.",
   "keywords": [
     "robot",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@wordpress/keycodes": "^3.1.1",
-    "winax": "^3.1.7"
+    "winax": "1.18.0"
   },
   "devDependencies": {
     "@types/node": "^16.3.2",
