@@ -1,12 +1,5 @@
-const path = require('path')
-const winax = require('winax')
+const { createFyl } = require('../../dist/turing')
 
-const objdll = new winax.Object('msdk.dll')
-
-const hdl = objdll.M_Open(1)
-console.log("open handle = " + hdl)
-// #键盘单击
-const res = objdll.M_KeyPress(hdl, 4, 2)
-// #打开
-console.log(
-	"M_KeyPress =  " + res)
+const fyl = createFyl()
+const a = fyl.M_ResolutionUsed(2560, 1440)
+fyl.MoveTo3(100, 100)
