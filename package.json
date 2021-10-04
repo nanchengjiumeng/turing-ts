@@ -18,7 +18,9 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@types/ffi-napi": "^4.0.4",
     "@wordpress/keycodes": "^3.1.1",
+    "ffi-napi": "^4.0.3",
     "winax": "1.18.0"
   },
   "devDependencies": {
