@@ -6,11 +6,15 @@ const dllPath = path.resolve(__dirname, "../dll/msdk.dll");
 export default function () {
 	const lib = ffi.Library(dllPath, {
 		'M_Open': ['int', ['int']],
-		'M_LeftClick': ['void', ['int', 'int']],
-		'M_RightClick': ['void', ['int', 'int']],
-		'M_MoveTo2': ['void', ['int', 'int', 'int']],
-		'M_MoveTo3': ['void', ['int', 'int', 'int']],
-		'M_ResolutionUsed': ['int', ['int', 'int', 'int']]
+		'M_LeftClick': ['int', ['int', 'int']],
+		'M_RightClick': ['int', ['int', 'int']],
+		'M_MoveTo2': ['int', ['int', 'int', 'int']],
+		'M_MoveTo3': ['int', ['int', 'int', 'int']],
+		'M_ResolutionUsed': ['int', ['int', 'int', 'int']],
+		'M_KeyPress': ['int', ['int', 'int', 'int']],
+		'M_KeyDown': ['int', ['int', 'int']],
+		'M_KeyUp': ['int', ['int', 'int']],
+		'M_KeyState': ['int', ['int', 'int']],
 	})
 	const r = lib.M_Open(1)
 
@@ -29,7 +33,19 @@ export default function () {
 		},
 		M_ResolutionUsed: (x: number, y: number) => {
 			return lib.M_ResolutionUsed(r, x, y)
-		}
+		},
+		KeyPress: (keycode: number, num: number) => {
+			return lib.M_KeyPress(r, keycode, num)
+		},
+		KeyDown: (keycode: number) => {
+			return lib.M_KeyDown(r, keycode)
+		},
+		KeyUp: (keycode: number) => {
+			return lib.M_KeyUp(r, keycode,)
+		},
+		KeyState: (keycode: number) => {
+			return lib.M_KeyState(r, keycode)
+		},
 	}
 }
 

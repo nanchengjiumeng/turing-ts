@@ -1,6 +1,6 @@
 {
   "name": "ts-turing",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "description": "Use Turing.dll in javascript.",
   "keywords": [
     "robot",
@@ -20,6 +20,7 @@
   "dependencies": {
     "@types/ffi-napi": "^4.0.4",
     "@wordpress/keycodes": "^3.1.1",
+    "bezier-js": "^4.1.1",
     "ffi-napi": "^4.0.3",
     "winax": "1.18.0"
   },
