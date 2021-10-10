@@ -1,6 +1,6 @@
 {
   "name": "ts-turing",
-  "version": "3.1.3",
+  "version": "3.1.7",
   "description": "Use Turing.dll in javascript.",
   "keywords": [
     "robot",

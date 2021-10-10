@@ -8,6 +8,13 @@ export default interface 加载字库 {
 	 */
 	Lib_Load(LibPath: string, iText?: string): number;
 	/**
+	 * 加载六十四进制识别字库字符串数据
+	 * @param LibStr：字符串型，识别字库的字符串内容（回车换行符用于分割数据）
+	 * @param iText：字符串型，可选，指定字库中的文字（类似白名单）
+	 * @returns num：整数型，字库的数量
+	*/
+	ib_LoadBase64(LibStr: string, iText?: string): number
+	/**
 	 * 加载识别字库字符串数据
 	 * @param LibStr：字符串型，识别字库的字符串内容（回车换行符用于分割数据） 
 	 * @param iText：字符串型，可选，指定字库中的文字（类似白名单）

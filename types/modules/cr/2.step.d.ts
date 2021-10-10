@@ -260,4 +260,22 @@ export default interface 滤镜处理 {
 	 * @param Model 布尔型，凹凸模式选择（默认True凸）
 	 */
 	Filter_MagicMirror(CenterX: number, CenterY: number, Radius?: number, degree?: number, Model?: boolean): void;
+
+	/**
+	 * (针对彩色图像处理)提取HSV色彩空间滤镜  
+	 * @param H 字符串型，色相范围("0-360")，多个范围竖线“|”隔开
+	 * @param S 字符串型，饱和度范围("0-100")，多个范围竖线“|”隔开
+	 * @param V 字符串型，亮度范围("0-100")，多个范围竖线“|”隔开
+	 * @param Flag 字符串型，是否保留颜色（默认保留True）
+	 */
+	Filter_ColorSpaceHSV(H: string, S: string, V: string, Flag?: boolean): void;
+
+	/**
+	 * (针对彩色图像处理)提取RGB色彩空间滤镜 
+	 * @param R 字符串型，红色分量范围("0-255")，多个范围竖线“|”隔开
+	 * @param G 字符串型，绿色分量范围("0-255")，多个范围竖线“|”隔开
+	 * @param B 字符串型，蓝色分量范围("0-255")，多个范围竖线“|”隔开
+	 * @param Flag 字符串型，是否保留颜色（默认保留True）
+	 */
+	Filter_ColorSpaceRGB(R: string, G: string, B: string, Flag?: boolean): void
 }
