@@ -24,4 +24,10 @@ export default interface 屏幕打印 {
 		* @returns 无
 	 */
 	Screen_Refresh(): void;
+
+	Display_Open(): void;
+
+	Display_Close(): void;
+
+	Display_Show(text: string): void
 }
