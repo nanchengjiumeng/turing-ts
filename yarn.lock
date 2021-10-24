@@ -239,8 +239,3 @@ tannin@^1.2.0:
   integrity sha512-U7GgX/RcSeUETbV7gYgoz8PD7Ni4y95pgIP/Z6ayI3CfhSujwKEBlGFTCRN+Aqnuyf4AN2yHL+L8x+TCGjb9uA==
   dependencies:
     "@tannin/plural-forms" "^1.1.0"
-
-winax@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/winax/-/winax-3.3.1.tgz#24308379de318783cc5b1470ed63852b51ba4632"
-  integrity sha512-oyJgj2xSwhlzV2zZJodlL1naYXSeZPc6QmR2q65G+3gCjc/ILOWj+hXb7BJJ1YGFYKFdSGqsGmPr99DDASwd5g==

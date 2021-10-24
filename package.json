@@ -21,8 +21,7 @@
     "@types/ffi-napi": "^4.0.4",
     "@wordpress/keycodes": "^3.1.1",
     "bezier-js": "^4.1.1",
-    "ffi-napi": "^4.0.3",
-    "winax": "^3.3.1"
+    "ffi-napi": "^4.0.3"
   },
   "devDependencies": {
     "@types/node": "^16.3.2",
