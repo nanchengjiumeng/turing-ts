@@ -240,7 +240,7 @@ tannin@^1.2.0:
   dependencies:
     "@tannin/plural-forms" "^1.1.0"
 
-winax@1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/winax/-/winax-1.18.0.tgz#51153ed0d06cb8eb927c7ead7abd0a28c3ae331b"
-  integrity sha512-isP1FXBL/m9Yv7Zr+s4/EAlWruI3WdkcmFhoOqf5JyLHhkkuJ3baM52xOO77KGE/m9uwIETgPy2xqcQ6jhykvQ==
+winax@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/winax/-/winax-3.3.1.tgz#24308379de318783cc5b1470ed63852b51ba4632"
+  integrity sha512-oyJgj2xSwhlzV2zZJodlL1naYXSeZPc6QmR2q65G+3gCjc/ILOWj+hXb7BJJ1YGFYKFdSGqsGmPr99DDASwd5g==
