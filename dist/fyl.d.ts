@@ -1,4 +1,4 @@
-export default function (): {
+export default function (path?: string): {
     LeftClick: (count?: number) => number;
     RightClick: (count?: number) => number;
     MoveTo2: (x: number, y: number) => number;

@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const ffi = require("ffi-napi");
 const path = require("path");
 const dllPath = path.resolve(__dirname, "../dll/msdk.dll");
-function default_1() {
-    const lib = ffi.Library(dllPath, {
+function default_1(path) {
+    const lib = ffi.Library(path || dllPath, {
         'M_Open': ['int', ['int']],
         'M_LeftClick': ['int', ['int', 'int']],
         'M_RightClick': ['int', ['int', 'int']],

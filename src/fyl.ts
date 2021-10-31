@@ -3,8 +3,8 @@ import * as path from 'path'
 const dllPath = path.resolve(__dirname, "../dll/msdk.dll");
 
 
-export default function () {
-	const lib = ffi.Library(dllPath, {
+export default function (path?: string) {
+	const lib = ffi.Library(path || dllPath, {
 		'M_Open': ['int', ['int']],
 		'M_LeftClick': ['int', ['int', 'int']],
 		'M_RightClick': ['int', ['int', 'int']],

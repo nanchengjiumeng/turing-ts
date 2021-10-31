@@ -23,8 +23,8 @@ function createDllBridge(dllPath) {
 exports.createDllBridge = createDllBridge;
 // const dllPath: string = path.resolve(__dirname, '../helper/turing@3.1.0/TURING/TURING.dll')
 const dllPath = path.resolve(__dirname, "../dll/3.0.7/TURING.dll");
-function createTuring() {
-    return createDllBridge(dllPath);
+function createTuring(path) {
+    return createDllBridge(path || dllPath);
 }
 exports.createTuring = createTuring;
 exports.createFyl = fyl_1.default;
