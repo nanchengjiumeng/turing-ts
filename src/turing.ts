@@ -8,7 +8,7 @@ const { execSync } = require('child_process');
 import winax = require('winax');
 import * as path from 'path'
 import { Turing } from '../types/turing';
-import Fyl from './fyl'
+import Fyl from './Fly/fyl'
 export function createDllBridge(dllPath: string): Turing {
 	try {
 		return new winax.Object('TURING.FISR') as Turing;

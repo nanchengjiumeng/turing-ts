@@ -5,7 +5,7 @@
  */
 export * as KeyCode from './Keycode';
 import { Turing } from '../types/turing';
-import Fyl from './fyl';
+import Fyl from './Fly/fyl';
 export declare function createDllBridge(dllPath: string): Turing;
 export declare function createTuring(path?: string): Turing;
 export declare const createFyl: typeof Fyl;

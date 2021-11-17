@@ -10,7 +10,7 @@ exports.KeyCode = require("./Keycode");
 const { execSync } = require('child_process');
 const winax = require("winax");
 const path = require("path");
-const fyl_1 = require("./fyl");
+const fyl_1 = require("./Fly/fyl");
 function createDllBridge(dllPath) {
     try {
         return new winax.Object('TURING.FISR');
