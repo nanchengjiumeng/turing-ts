@@ -25,6 +25,22 @@ export default interface 识别对比 {
 	 */
 	OCRtext(Similar?: number, Model?: number, iSkip?: number): string;
 	/**
+	 * 针对识别结果换算返回绝对坐标值内容
+	 * @param Result Result：字符串型，识别结果内容
+	 * @returns text：字符串型，输出换算为正确的绝对坐标值内容
+	 */
+	OCR_AbsCoordinates(Result: string): string
+	/**
+	 * 进行图像文字识别（精简版：图灵识别） 
+	 *  LaiYuan：字符串型，来源参数内容。
+			LvJing：字符串型，滤镜参数内容，多个用加号“+”分隔。
+			QieGe：字符串型，切割参数内容。
+			ZiKu：字符串型，字库参数内容。
+			ShiBie：字符串型，识别参数内容。参数设置自行查看OCR命令帮助。
+			@returns text：字符串型，识别得到的文字内容
+	 */
+	OCR_TURING(LaiYuan: string, LvJing: string, QieGe: string, ZiKu: string, ShiBie: string): string
+	/**
 	* 进行区域范围内快速查找文字(仅支持单个文字的识别库)
 	* @param Text：字符串型，需要查找的文字（多个：文字串|文字串|…）
 	* @param Similar：整数型，点数匹配相似度（范围0~100，默认100匹配最高的相似）<br>

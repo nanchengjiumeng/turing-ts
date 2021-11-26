@@ -1,14 +1,35 @@
 图灵识别插件更新说明:
 
 
-VIP版本：v3.0.5.202100805
-1、解决 “Incise_FixedLocation”固定位置切割超出字符范围会残留白色的问题
-2、优化 “Incise_RandomOrientation”随机方位切割白色字符不正常问题
-3、优化 “Incise_ScopeAisle”范围投影切割白色字符不正常问题
-4、优化 “Locate_TargetArea”目标检测定位白色字符不正常问题
+VIP版本：v3.0.7.20211026
+1、新增 “Window_GetClientSize”得到窗口客户区大小
+2、解决 “Pixel_FromMemory”获取内存像素上涨内存的问题
+3、优化 “Filter_Rotate”固定旋转算法（存在兼容问题）
+4、优化 “Filter_RotateCorrect”旋转纠正算法（存在兼容问题）
+5、优化 “Incise_CharRotateCorrect”切割字符旋转纠正算法（存在兼容问题）
+6、新增 “OCR”识别结果支持返回对应文字位置及大小的参数
+7、优化 “OCR_TURING”图灵识别支持切割字符格式化命令
+8、新增 “Display_Open”打开显示器（切割应用）
+9、新增 “Display_Show”显示切割范围信息（切割应用）
+10、新增 “Display_Close”关闭显示器（切割应用）
 
 
-VIP版本：v3.0.3.202100805
+VIP版本：v3.0.6.20211007
+1、新增 “Lib_LoadBase64”加载六十四进制识别字库
+2、新增 “OCR_TURING”进行图像文字识别（精简版：图灵识别） 
+3、新增 “OCR_AbsCoordinates”针对识别结果换算返回绝对坐标值内容
+4、调整 参与计算绝对值坐标的相关命令处理
+
+VIP版本：v3.0.5.20210823
+1、新增 “Filter_ColorSpaceHSV”提取HSV色彩空间滤镜
+2、新增 “Filter_ColorSpaceRGB”提取RGB色彩空间滤镜
+3、解决 “Incise_FixedLocation”固定位置切割超出字符范围会残留白色的问题
+4、优化 “Incise_RandomOrientation”随机方位切割白色字符不正常问题
+5、优化 “Incise_ConnectedArea”连通区域切割白色字符不正常问题
+6、优化 “Incise_ScopeAisle”范围投影切割白色字符不正常问题
+7、优化 “Locate_TargetArea”目标检测定位白色字符不正常问题
+
+VIP版本：v3.0.3.20210805
 1、新增 “Filter_ChannelLayer”通道图层滤镜
 2、新增 “OCRtext”识别_精准识字
 3、调整 “GetRoundPointColor”获取圆边点颜色，支持屏幕获取
