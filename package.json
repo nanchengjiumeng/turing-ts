@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "^16.3.2",
     "node-watch": "^0.7.1",
-    "ffi-napi": "^3.1.0",
+    "ffi-napi": "3.1.0",
     "@types/ffi-napi": "^4.0.4"
   },
   "author": "王羽彪 <1443837536@qq.com>",
